@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="5px"
+    android:paddingTop="5px" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="75px"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mysendname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <ImageView
+            android:id="@+id/yiman"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_margin="0px"
+            android:gravity="bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingRight="40px" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/from"
+            android:orientation="vertical"
+            android:paddingBottom="5px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:paddingTop="5px" >
+
+            <TextView
+                android:id="@+id/mymessagecontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:typeface="monospace" />
+
+            <ImageView
+                android:id="@+id/uploadFileImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5.0dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mysendtime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:textColor="#000"
+            android:textSize="12px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

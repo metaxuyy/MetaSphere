@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dip"
+    android:layout_marginTop="0dip"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/seperate_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/seperate_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RatingBar
+            android:id="@+id/peng_ji_img"
+            style="@style/my_ratingbar_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:isIndicator="true" />
+
+        <TextView
+            android:id="@+id/comment_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="2.0dip"
+            android:textColor="#000000"
+            android:textSize="16.0dip" />
+
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="3.0dip"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/comment_dec"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="3.0dip"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>

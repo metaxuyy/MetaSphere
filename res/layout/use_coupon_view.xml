@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:background="#fffffee8"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <LinearLayout
+            android:id="@+id/logoContainer"
+            android:layout_width="86.0dip"
+            android:layout_height="56.0dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_logo"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/coupon_image"
+                android:layout_width="80.0dip"
+                android:layout_height="50.0dip"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/coupon_name"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginRight="170.0dip"
+            android:layout_toRightOf="@id/logoContainer"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingTop="5.0dip"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="60.0dip"
+            android:layout_height="42.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_event_1_close"
+            android:gravity="center"
+            android:text="@string/hotel_reservation_lable_22"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:text="@string/travel_btn5"
+            android:textColor="#ff9e9e9e"
+            android:textSize="15.0sp" />
+
+        <LinearLayout
+            android:id="@+id/barContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="145.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/shape9"
+                android:gravity="center"
+                android:padding="8.0dip" >
+
+                <ImageView
+                    android:id="@+id/coupon_noimg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@drawable/shape10"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/coupon_no_list"
+                    android:textColor="#000000"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/coupon_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="24.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

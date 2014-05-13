@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:id="@+id/main_rlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/menuload_backBtn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/menuload_title"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/menuload_refreshBtn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_right"
+                android:clickable="true"
+                android:text="@string/menu9"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/menuload_web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

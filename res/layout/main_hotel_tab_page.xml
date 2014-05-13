@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+        <!--
+        <RadioGroup android:gravity="center_vertical"
+			android:layout_gravity="bottom" android:orientation="horizontal"
+			android:id="@+id/main_radio" android:background="@drawable/bottom_bar"
+			android:layout_width="fill_parent" android:layout_height="55dp"			
+			>
+
+			<RadioButton android:id="@+id/radio_button0" android:tag="radio_button0"
+				android:layout_marginTop="2.0dip" android:text="@string/vip_card"
+				android:drawableTop="@drawable/card_icon_cn_64" style="@style/main_tab_bottom" />
+			<RadioButton android:id="@+id/radio_button1" android:tag="radio_button1"
+				android:layout_marginTop="2.0dip" android:text="@string/mybill_list_lable_1"
+				android:drawableTop="@drawable/bottom_menu_search" style="@style/main_tab_bottom" />
+			<RadioButton android:id="@+id/radio_button2" android:tag="radio_button2"
+				android:layout_marginTop="2.0dip" android:text="@string/scanning_info"
+				android:drawableTop="@drawable/bottom_menu_saomiao" style="@style/main_tab_bottom" />
+			<RadioButton android:id="@+id/radio_button3" android:tag="radio_button3"
+				android:layout_marginTop="2.0dip" android:text="@string/go_target"
+				android:drawableTop="@drawable/bottom_meun_xianqu" style="@style/main_tab_bottom" />
+			<RadioButton android:id="@+id/radio_button4" android:tag="radio_button4"
+				android:layout_marginTop="2.0dip" android:text="@string/travel_lable_19"
+				android:drawableTop="@drawable/bottom_menu_more" style="@style/main_tab_bottom" />
+
+		</RadioGroup>
+        -->
+
+        <RelativeLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_bar"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_tab_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:scaleType="matrix"
+                android:src="@drawable/tab_bg_halo" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="2dp" >
+
+                <LinearLayout
+                    android:id="@+id/layout6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+					
+                    <RelativeLayout
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center" >
+	                    <ImageView
+	                        android:id="@+id/img_home"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:clickable="true"
+	                        android:layout_centerInParent="true"
+	                        android:src="@drawable/tab_home_pressed" />
+	                    
+<!-- 	                    <TextView android:id="@+id/new_number" 
+				            android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				            android:background="@drawable/navigation_ts" 
+				            android:text="1"  android:textColor="#ffffff"
+				            android:gravity="center" android:textSize="12dip"
+				            android:visibility="gone" android:layout_marginRight="5dip"
+				            android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>-->                    
+				    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hotel_label_122"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layout7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+					
+                    <RelativeLayout
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center" >
+	                    <ImageView
+	                        android:id="@+id/img_service"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:clickable="true"
+	                        android:layout_centerInParent="true"
+	                        android:src="@drawable/tab_service_normal" />
+	                    
+	                    <TextView android:id="@+id/new_service_number" 
+				            android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				            android:background="@drawable/navigation_ts" 
+				            android:text="1"  android:textColor="#ffffff"
+				            android:gravity="center" android:textSize="12dip"
+				            android:visibility="gone" android:layout_marginRight="5dip"
+				            android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/service_lable_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hotel_label_121"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+					
+                    <RelativeLayout
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center" >
+	                    <ImageView
+	                        android:id="@+id/img_weixin"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:clickable="true"
+	                        android:layout_centerInParent="true"
+	                        android:src="@drawable/tab_weixin_normal" />
+	                    
+	                    <TextView android:id="@+id/new_number" 
+				            android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				            android:background="@drawable/navigation_ts" 
+				            android:text="1"  android:textColor="#ffffff"
+				            android:gravity="center" android:textSize="12dip"
+				            android:visibility="gone" android:layout_marginRight="5dip"
+				            android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hotel_label_6"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center" >
+	                    <ImageView
+		                        android:id="@+id/img_address"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:clickable="true"
+		                        android:layout_centerInParent="true"
+		                        android:src="@drawable/tab_find_frd_normal" />
+	                    
+	                    <ImageView android:id="@+id/new_moments_img" 
+				            android:layout_width="14dip" android:layout_height="14dip" 
+				            android:src="@drawable/navigation_ts"
+				            android:gravity="center" 
+				            android:visibility="gone" android:layout_marginRight="5dip"
+				            android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hotel_label_7"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout> -->
+
+                <LinearLayout
+                    android:id="@+id/layout5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center" >
+	                    <ImageView
+	                        android:id="@+id/img_contact"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:clickable="true"
+	                        android:layout_centerInParent="true"
+	                        android:src="@drawable/tab_contact_normal" />
+	                    
+	                    <TextView android:id="@+id/new_yanzhen_number" 
+				            android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				            android:background="@drawable/navigation_ts" 
+				            android:gravity="center" android:textSize="12dip"
+				            android:text="1"  android:textColor="#ffffff"
+				            android:visibility="gone" android:layout_marginRight="5dip"
+				            android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hotel_label_5"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- <LinearLayout
+                    android:id="@+id/layout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/img_friends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/tab_find_frd_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hotel_label_7"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout> -->
+
+                <LinearLayout
+                    android:id="@+id/layout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center" >
+	                    <ImageView
+		                        android:id="@+id/img_settings"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:clickable="true"
+		                        android:layout_centerInParent="true"
+		                        android:src="@drawable/tab_settings_normal" />
+	                    
+	                    <ImageView android:id="@+id/new_moments_img" 
+				            android:layout_width="14dip" android:layout_height="14dip" 
+				            android:src="@drawable/navigation_ts"
+				            android:gravity="center" 
+				            android:visibility="gone" android:layout_marginRight="5dip"
+				            android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+	                    
+	                    <TextView android:id="@+id/new_moments_txt" 
+				            android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				            android:background="@drawable/navigation_ts"
+				            android:gravity="center"
+				            android:textSize="9dip"
+				            android:text="New"
+				            android:textColor="#ffffff"
+				            android:visibility="gone" android:layout_marginRight="5dip"
+				            android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hotel_label_123"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</TabHost>

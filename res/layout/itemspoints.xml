@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutpoints"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingRight="10.0dip"
+    android:paddingTop="4dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:text="VIP卡号    : "
+            android:textColor="#686868" />
+
+        <TextView
+            android:id="@+id/vip_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO201454646465454646"
+            android:textColor="#606060" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:text="参与门店： "
+            android:textColor="#686868" />
+
+        <TextView
+            android:id="@+id/vip_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="希尔顿酒店 （华山路）"
+            android:textColor="#606060" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:text="更新时间： "
+            android:textColor="#686868" />
+
+        <TextView
+            android:id="@+id/vip_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2011-11-02 18:00:56"
+            android:textColor="#606060" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:text="更新积分： "
+            android:textColor="#686868" />
+
+        <TextView
+            android:id="@+id/vip_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40"
+            android:textColor="#C80000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:text="当前积分： "
+            android:textColor="#686868" />
+
+        <TextView
+            android:id="@+id/vip_cur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1400"
+            android:textColor="#B80000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dip"
+        android:paddingTop="4dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:text="积分更新详细： "
+            android:textColor="#686868" />
+
+        <TextView
+            android:id="@+id/vip_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#606060" />
+    </LinearLayout>
+
+</LinearLayout>

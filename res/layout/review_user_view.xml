@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffe7e7e7" >
+
+        <RadioGroup
+            android:id="@+id/user_review_sort_group"
+            style="@style/Widget.SegmentedControlGroup.UserReviews"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header"
+            android:orientation="horizontal"
+            android:padding="8.0dip" >
+
+            <RadioButton
+                android:id="@+id/user_review_button_recent"
+                style="@style/CustomLeftRadioBtn"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/menu_lable_163" />
+
+            <RadioButton
+                android:id="@+id/user_review_button_favorable"
+                style="@style/CustomCenterRadioBtn"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/menu_lable_164" />
+
+            <RadioButton
+                android:id="@+id/user_review_button_critical"
+                style="@style/CustomRightRadioBtn"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/menu_lable_165" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/bottom_bar"
+            style="@android:style/ButtonBar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_bar_height"
+            android:layout_alignParentBottom="true"
+            android:background="#cc000000" >
+
+            <TextView
+                android:id="@+id/user_review_total_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="4.0dip"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/user_review_rating_bar_bottom"
+                style="@style/RatingBarSmall.Shadowed.UserReview.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/user_review_total_reviews"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.5" />
+            <!-- <com.mobiata.android.widget.AutoResizeTextView android:textStyle="bold" android:layout_gravity="right|center" android:id="@+id/book_now_button" android:layout_width="@dimen/header_button_width" android:layout_height="@dimen/action_bar_button_height" android:text="@string/book_now" android:maxLines="1" android:layout_alignParentRight="true" mobiata:maxTextSize="15.0dip" style="@style/Widget.Button.Orange" /> -->
+
+            <TextView
+                android:id="@+id/book_now_button"
+                style="@style/Widget.Button.Orange"
+                android:layout_width="@dimen/header_button_width"
+                android:layout_height="@dimen/header_button_height"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginTop="5.0dip"
+                android:maxLines="1"
+                android:paddingBottom="5.0dip"
+                android:paddingTop="5.0dip"
+                android:text="@string/book_now"
+                android:textSize="15.0dip"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/lists_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/bottom_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/user_review_sort_group"
+            android:paddingBottom="@dimen/bottom_bar_padding" >
+
+            <RelativeLayout
+                android:id="@+id/reviewlist_ry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/lsit_herd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3.0dip" >
+
+                    <ImageView
+                        android:id="@+id/user_reviews_thumb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="9.0dip"
+                        android:layout_marginTop="6.0dip"
+                        android:src="@drawable/review_thumbs_up" />
+
+                    <TextView
+                        android:id="@+id/user_reviews_recommendation_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="9.0dip"
+                        android:layout_marginTop="6.0dip"
+                        android:layout_toLeftOf="@id/user_reviews_thumb"
+                        android:text="ddddd"
+                        android:textColor="#ff797979" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/review_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lsit_herd"
+                    android:cacheColorHint="#00000000"
+                    android:fadingEdge="none"
+                    android:listSelector="#00000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ProgressBar
+                    android:id="@+id/probar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminateDrawable="@drawable/my_progressbar_bg_color" />
+
+                <TextView
+                    android:id="@+id/nulltxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/menu_lable_136"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

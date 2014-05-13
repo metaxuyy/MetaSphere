@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_light_dw" android:state_pressed="true"/>
+    <item android:drawable="@drawable/btn_light_on" android:state_enabled="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/btn_light_nm" android:state_enabled="true"/>
+    <item android:drawable="@drawable/btn_light_ds" android:state_enabled="false" android:state_focused="true"/>
+    <item android:drawable="@drawable/btn_light_ds"/>
+
+</selector>

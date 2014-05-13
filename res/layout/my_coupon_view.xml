@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_catalog"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <GridView
+        android:id="@+id/GridView_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/GridView_toolbar"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/mycouponLayouts"
+            android:layout_width="700px"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shape"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shape2"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="400px"
+                android:fadingEdge="vertical"
+                android:scrollbars="vertical" >
+
+                <TextView
+                    android:id="@+id/coupon_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textSize="28px" />
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/tiaoma_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/down_coup_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/myselection"
+                android:text="@string/upload_coupons_this"
+                android:textColor="#FFFFFFFF"
+                android:textSize="28px"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

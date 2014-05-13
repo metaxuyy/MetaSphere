@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="user_info"
+        android:orientation="vertical" >
+
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+	        <ms.globalclass.image.RoundAngleImageView
+	            android:id="@+id/iv_userhead"
+	            android:layout_width="60dip"
+	            android:layout_height="60dip"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:focusable="false"
+	            app:roundHeight="10dp"
+	            app:roundWidth="10dp"
+	            android:src="@drawable/default_avatar_shadow" />
+	        
+	        <ImageView android:id="@+id/delete_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete_btn" android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_backgroud"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_bg"
+            android:gravity="center"
+            android:shadowColor="#75000000"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:text="@string/dis_pdu"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="15.0dip"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:id="@+id/comment_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/p_name_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip" >
+
+                <TextView
+                    android:id="@+id/widget35"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1" >
+
+                    <TableRow >
+
+                        <TextView
+                            android:id="@+id/oldPricestvtxt"
+                            android:layout_width="wrap_content"
+                            android:gravity="right"
+                            android:padding="2dip"
+                            android:text="@string/market_price"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/oldPricestv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:shadowColor="#ff000000"
+                            android:text="TextView"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:gravity="right"
+                            android:padding="2dip"
+                            android:text="@string/price_info"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/widget36"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:shadowColor="#ff000000"
+                            android:text="TextView"
+                            android:textColor="#000000" >
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow >
+
+                        <TextView
+                            android:id="@+id/savingtvtxt"
+                            android:layout_width="wrap_content"
+                            android:gravity="right"
+                            android:padding="2dip"
+                            android:text="@string/save_money"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/savingtv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:shadowColor="#ff000000"
+                            android:text="TextView"
+                            android:textColor="#dc143c" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/seperate_line2"
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:background="@drawable/seperate_line" />
+
+            <LinearLayout
+                android:id="@+id/comment_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avg_points"
+                    android:textColor="#FF8000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RatingBar
+                        android:id="@+id/peng_ji_img"
+                        style="@style/my_ratingbar_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:isIndicator="true" />
+
+                    <TextView
+                        android:id="@+id/total_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="@string/dis_0"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/star_5"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/comments_plan5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/comments_numbers5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="(0)"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/star_4"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/comments_plan4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/comments_numbers4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="(0)"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/star_3"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/comments_plan3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/comments_numbers3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="(0)"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/star_2"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/comments_plan2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/comments_numbers2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="(0)"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/star_1"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/comments_plan1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/comments_numbers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="(0)"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ProgressBar
+                    android:id="@+id/probar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminateDrawable="@drawable/my_progressbar_bg_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

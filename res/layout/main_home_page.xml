@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+    <!--
+             <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"  >  
+  			
+            
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="信息"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" /> 
+			<ImageButton 
+			    android:id="@+id/right_btn"
+			    android:layout_width="67dp" 
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true" 
+        		android:layout_centerVertical="true"
+        		android:layout_marginRight="5dp"
+        		android:layout_marginTop="5dip"
+        		android:layout_marginBottom="5dip"
+        		android:paddingTop="3dip"
+        		android:paddingBottom="3dip"
+        		android:src="@drawable/ic_title_add2"
+				android:background="@drawable/title_btn_right"
+				android:onClick="btnmainright"
+			    />      
+		</RelativeLayout>
+    -->
+    <!-- 标题栏 -->
+
+    <LinearLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="@string/hotel_label_6"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/add_message"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/title_btn_right"
+                android:src="@drawable/mm_title_btn_compose_normal"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/net_stus_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mm_net_listitem"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/net_warn_icon" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/hotel_label_37"
+            android:textColor="#151515"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_img_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bar_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="openAvatarView"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="3dip"
+            android:src="@drawable/default_avatar_shadow" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/chatfrom_bg_normal"
+            android:text="@string/hotel_label_2"
+            android:textColor="#151515"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listvid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0px"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/progLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/umeng_xp_progressbar" />
+
+        <TextView
+            android:id="@+id/progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/map_lable_11"
+            android:textColor="#000000"
+            android:textSize="26dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/msg_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有数据"
+            android:textColor="#FFFFFF"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

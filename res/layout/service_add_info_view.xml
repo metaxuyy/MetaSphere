@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D8D8D8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/break_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_lable"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <!-- <ImageButton
+                android:id="@+id/move_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_right"
+                android:clickable="true"
+                android:onClick="openMoveMume"
+                android:src="@drawable/mm_title_btn_menu_normal"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ms.globalclass.image.RoundAngleImageView
+            android:id="@+id/user_img"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_gravity="center"
+            android:layout_margin="8dip"
+            app:roundHeight="10dp"
+            app:roundWidth="10dp"
+            android:src="@drawable/bg_photoframe" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/name_txt"
+                    style="@style/TextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:shadowColor="#ffffffff"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/stra_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="2.3" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/type_txt"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:shadowColor="#ffffffff"
+                android:text=""
+                android:textColor="#848484"
+                android:textSize="14dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="54dp"
+                android:background="@drawable/btn_style_green"
+                android:gravity="center"
+                android:onClick="addService"
+                android:padding="4dp"
+                android:textSize="22sp"
+                android:text="@string/menu_lable_52"
+                android:textColor="#fff"/>
+	 
+</LinearLayout>

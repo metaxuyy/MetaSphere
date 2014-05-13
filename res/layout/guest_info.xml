@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/firstlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="18.0sp" />
+
+    <EditText
+        android:id="@+id/secondlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@id/firstlabel"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="18.0sp" />
+
+</RelativeLayout>

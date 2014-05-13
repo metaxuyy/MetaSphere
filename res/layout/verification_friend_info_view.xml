@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/break_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_lable"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hotel_label_3"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ms.globalclass.image.RoundAngleImageView
+            android:id="@+id/user_img"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_gravity="center"
+            android:layout_margin="8dip"
+            app:roundHeight="10dp"
+            app:roundWidth="10dp"
+            android:src="@drawable/default_avatar_shadow" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/name_txt"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#ffffffff"
+                    android:text="fffff"
+                    android:textColor="#000000"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/sex_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_sex_male" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/account_txt"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:shadowColor="#ffffffff"
+                android:text=""
+                android:textColor="#848484"
+                android:textSize="14dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    
+   	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/ic_preference_sayhi_normal"  android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+   	    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/message_txt" android:textColor="#A4A4A4" android:text="ddddd" android:textSize="14dip"/>
+   	</LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/preference_first_item"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+             android:id="@+id/left_txt"
+            android:text="@string/hotel_label_74"
+            android:textColor="#6E6E6E"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/area_txt"
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#000"
+            android:layout_toRightOf="@id/left_txt"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_last_item"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+		
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/left_txt2"
+            android:text="@string/hotel_label_106"
+            android:textColor="#6E6E6E"
+            android:textSize="17sp" />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/right_img2"
+            android:clickable="true"
+            android:scaleType="matrix"
+            android:src="@drawable/come_from_verify" />
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gexin_txt"
+            android:padding="8dp"
+            android:text="@string/hotel_label_107"
+            android:textColor="#000"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tonguo_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/btn_style_green"
+        android:gravity="center"
+        android:onClick="updateVerification"
+        android:padding="4dp"
+        android:text="@string/hotel_label_102"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+    
+    <Button
+        android:id="@+id/black_btn"
+        android:layout_marginTop="14dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/btn_style_alert_dialog_button"
+        android:gravity="center"
+        android:onClick="updateVerification2"
+        android:padding="4dp"
+        android:text="@string/hotel_label_105"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+</LinearLayout>

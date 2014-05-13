@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_backgroud"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_gravity="top"
+        android:background="@drawable/logo_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="#75000000"
+                android:shadowDy="2.0"
+                android:shadowRadius="2.0"
+                android:text="@string/menu_lable_2"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/edit_cart"
+            android:layout_width="40.0dip"
+            android:layout_height="30.0dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_button"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:paddingTop="2.0dip"
+            android:scaleType="fitXY"
+            android:text="@string/menu_lable_32"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/real_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_red_ico"
+            android:gravity="center"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:paddingTop="2.0dip"
+            android:scaleType="fitXY"
+            android:text="@string/menu_lable_33"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrBody"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayout01"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffa2282f"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/textOffSellInfo1"
+                    style="@style/style_13_FFFFFF_BOLD"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10.0dip"
+                    android:paddingTop="10.0dip"
+                    android:text="@string/menu_lable_48"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linTotalInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopcar_total_info_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/style_14_4B4B4B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5.0dip"
+                        android:text="@string/menu_lable_44" />
+
+                    <TextView
+                        android:id="@+id/textTotalBuyCount"
+                        style="@style/style_14_A10D0B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5.0dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/style_14_4B4B4B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5.0dip"
+                        android:text="@string/menu_lable_45" />
+
+                    <TextView
+                        android:id="@+id/textTotalPoint"
+                        style="@style/style_14_A10D0B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5.0dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/style_14_4B4B4B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5.0dip"
+                        android:text="@string/menu_lable_46" />
+
+                    <TextView
+                        android:id="@+id/textTotalPayMoney"
+                        style="@style/style_18_A10D0B_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cart_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linTotalInfo2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopcar_total_info_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/style_14_4B4B4B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5.0dip"
+                        android:text="@string/menu_lable_44" />
+
+                    <TextView
+                        android:id="@+id/textTotalBuyCount2"
+                        style="@style/style_14_A10D0B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5.0dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/style_14_4B4B4B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5.0dip"
+                        android:text="@string/menu_lable_45" />
+
+                    <TextView
+                        android:id="@+id/textTotalPoint2"
+                        style="@style/style_14_A10D0B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5.0dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/style_14_4B4B4B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5.0dip"
+                        android:text="@string/menu_lable_46" />
+
+                    <TextView
+                        android:id="@+id/textTotalPayMoney2"
+                        style="@style/style_18_A10D0B_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textServiceInfo"
+                style="@style/style_16_A10D0B_BOLD"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="5.0dip"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffa2282f"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/textOffSellInfo2"
+                    style="@style/style_13_FFFFFF_BOLD"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10.0dip"
+                    android:paddingTop="10.0dip"
+                    android:text="@string/menu_lable_49"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shelf_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imgShopcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/shopcar"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textShopcarIsNullInfo"
+        style="@style/style_20_666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgShopcar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/menu_lable_31"
+        android:visibility="visible" />
+
+</RelativeLayout>

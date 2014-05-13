@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@id/LinearLayout02"
+        android:layout_width="85.0dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/theme_title_blue"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="5.0dip" >
+
+        <TextView
+            android:id="@+id/station_num_TextView"
+            style="@style/text_big_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="D3018/D3019" />
+
+        <TextView
+            android:id="@+id/station_typeName_TextView"
+            style="@style/text_mid_Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Dongche" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip" >
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/station_startName_TextView"
+                style="@style/text_mid_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="beijing" />
+
+            <TextView
+                android:id="@+id/station_arriveName_TextView"
+                style="@style/text_mid_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5.0dip"
+                android:singleLine="true"
+                android:text="shanghai" />
+
+            <TextView
+                android:id="@+id/station_arriveName_TextView"
+                style="@style/text_mid_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/station_p1_TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="piaojia1"
+                android:textColor="@color/traincode_textcolor" />
+
+            <TextView
+                android:id="@+id/station_p2_TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5.0dip"
+                android:text="piaojia2"
+                android:textColor="@color/traincode_textcolor" />
+
+            <TextView
+                android:id="@+id/station_p3_TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/traincode_textcolor" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/station_p4_TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="piaojia1"
+                android:textColor="@color/traincode_textcolor" />
+
+            <TextView
+                android:id="@+id/station_p5_TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5.0dip"
+                android:text="piaojia2"
+                android:textColor="@color/traincode_textcolor" />
+
+            <TextView
+                android:id="@+id/station_p6_TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/traincode_textcolor" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

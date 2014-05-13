@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff0788b0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/btn_header"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_weight="6.0"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtv1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:shadowColor="#75000000"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="2.0"
+                    android:textColor="#ffffffff"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layAD1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_header"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_weight="0.0"
+        android:background="#ff0788b0"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="70.0dip"
+            android:layout_height="70.0dip"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/layoutImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip" >
+
+                <ImageView
+                    android:id="@+id/img_areaImg"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bg_photoframe" />
+
+                <ImageView
+                    android:id="@+id/imgMask"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:src="@drawable/pic_mask" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="5.0dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layoutType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_store_name"
+                    style="@style/fontColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3.0dip"
+                    android:text="dddd"
+                    android:textSize="18.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tool"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.0"
+        android:background="@drawable/bg_toolbar" >
+
+        <Button
+            android:id="@+id/btn_vip_add_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_toolbar_selector"
+            android:drawableTop="@drawable/card_icon_cn_64"
+            android:gravity="center_horizontal"
+            android:paddingBottom="3.0dip"
+            android:text="@string/enter_storinfo"
+            android:textColor="#ff000000"
+            android:textSize="10.0dip" />
+
+        <Button
+            android:id="@+id/btn_colse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_toolbar_selector"
+            android:drawableTop="@drawable/btn_close_advertise"
+            android:gravity="center_horizontal"
+            android:paddingBottom="3.0dip"
+            android:text="@string/hotel_reservation_lable_22"
+            android:textColor="#ff000000"
+            android:textSize="10.0dip" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tool"
+        android:layout_below="@id/layAD1"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_weight="2.0"
+        android:background="@drawable/bg_bubble_box" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    style="@style/fontColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="dddd"
+                    android:textSize="18.0dip"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_title"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:lineSpacingExtra="7.0px"
+                android:padding="5.0dip"
+                android:scrollHorizontally="false"
+                android:text="dddd"
+                android:textColor="#ff666666" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/advertise_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_message"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <ms.globalclass.scroll.MyGridView
+                android:id="@+id/adetil_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

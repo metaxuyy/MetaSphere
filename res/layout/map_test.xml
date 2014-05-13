@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res/ms.activitys"
+    android:id="@+id/RelativeLayout_catalog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#BDBDBD" >
+
+    <RadioGroup
+        android:id="@+id/radius_filter_button_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:orientation="horizontal"
+        android:padding="8.0dip" >
+
+        <RadioButton
+            android:id="@+id/radius_small_button"
+            style="@style/CustomLeftMapRadioBtn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/menu_lable_166"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radius_medium_button"
+            style="@style/CustomCenterMapRadioBtn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/menu_lable_167"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radius_large_button"
+            style="@style/CustomCenterMapRadioBtn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/menu_lable_168"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radius_all_button"
+            style="@style/CustomRightMapRadioBtn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:checked="true"
+            android:text="@string/map_lable_10"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</RelativeLayout>

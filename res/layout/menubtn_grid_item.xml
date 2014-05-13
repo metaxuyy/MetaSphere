@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/login_edit_normal"
+    android:layout_marginTop="10dp" >
+
+    <LinearLayout
+        android:id="@+id/menuLL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/menubtnName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新推荐" />
+
+        <ImageView
+            android:id="@+id/menubtnImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuLL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuLL1"
+        android:layout_marginTop="5dp" >
+
+        <Spinner
+            android:id="@+id/menuBtnType"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/menuUrlLL"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/menuBtnUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="输入url" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuSkipLL"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical" >
+
+            <Spinner
+                android:id="@+id/menuBtnSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

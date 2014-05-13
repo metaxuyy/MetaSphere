@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/break_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_lable"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/move_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_right_blue"
+                android:clickable="true"
+                android:onClick="saveData"
+                android:text="@string/save_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/user_name_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+        <EditText 
+		    android:id="@+id/user_name_edit"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="#000"
+		    android:textSize="15sp"
+		    android:layout_marginTop="25dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:singleLine="true"
+		    android:background="@drawable/mm_edit"/>
+        <TextView
+            style="@style/MMLineLabel"
+            android:id="@+id/tip_txt"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="@string/hotel_label_81"
+           />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/account_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+        <TextView
+            style="@style/MMLineLabel"
+            android:id="@+id/tip_txt"
+            android:layout_marginTop="25dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="@string/hotel_label_83"
+           />
+        
+        <EditText 
+		    android:id="@+id/account_edit"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="#000"
+		    android:textSize="15sp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:singleLine="true"
+		    android:background="@drawable/mm_edit"/>
+        <TextView
+            style="@style/MMLineLabel"
+            android:id="@+id/tip_txt"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="@string/hotel_label_85"
+           />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/sex_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone" android:padding="10dip">
+     	<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+     	    <TextView
+            style="@style/MMLineLabel"
+            android:id="@+id/tip_txt"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="@string/male"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+           />
+     	   <ImageView android:id="@+id/img_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_shoot_select_checked" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+     	</RelativeLayout>
+     	<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginTop="15dip">
+     	    <TextView
+            style="@style/MMLineLabel"
+            android:id="@+id/tip_txt"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="@string/female"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+           />
+     	   <ImageView android:id="@+id/img_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_shoot_select_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+     	</RelativeLayout>
+    </LinearLayout>"
+
+	<LinearLayout android:id="@+id/area_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+        <EditText 
+		    android:id="@+id/area_edit"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="#000"
+		    android:textSize="15sp"
+		    android:layout_marginTop="25dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:singleLine="true"
+		    android:background="@drawable/mm_edit"/>
+        <TextView
+            style="@style/MMLineLabel"
+            android:id="@+id/tip_txt2"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="@string/hotel_label_91"
+           />
+    </LinearLayout>
+    
+	<LinearLayout android:id="@+id/gexin_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+        <EditText 
+		    android:id="@+id/gexin_edit"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="#000"
+		    android:textSize="15sp"
+		    android:maxHeight="200dip"
+		    android:minHeight="130dip"
+		    android:gravity="top"
+		    android:layout_marginTop="25dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+		    android:singleLine="false"
+		    android:background="@drawable/mm_edit"/>
+        <TextView
+            style="@style/MMLineLabel"
+            android:id="@+id/tip_txt"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="@string/hotel_label_90"
+           />
+    </LinearLayout>
+    
+	<LinearLayout android:id="@+id/group_name_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+        <EditText 
+		    android:id="@+id/group_name_edit"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="#000"
+		    android:textSize="15sp"
+		    android:layout_marginTop="25dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:singleLine="true"
+		    android:background="@drawable/mm_edit"/>
+    </LinearLayout>
+</LinearLayout>

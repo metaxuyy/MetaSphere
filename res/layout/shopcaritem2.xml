@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/relProductImage"
+        android:layout_width="82.0dip"
+        android:layout_height="82.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip" >
+
+        <ImageView
+            android:id="@+id/imgProductImage"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="82.0dip"
+            android:layout_height="82.0dip"
+            android:background="@drawable/border_80" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/relProductImage"
+        android:orientation="vertical"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="5.0dip" >
+
+        <TextView
+            android:id="@+id/textProductName"
+            style="@style/style_15_666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:lines="2"
+            android:paddingRight="15.0dip" />
+
+        <TextView
+            android:id="@+id/productid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:paddingRight="15.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:paddingRight="15.0dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textSku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textSize"
+                style="@style/style_13_9F9F9F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textColor"
+                style="@style/style_13_9F9F9F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:paddingLeft="40.0dip"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textBuyCount"
+                style="@style/style_13_9F9F9F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/editBuyCount"
+                android:layout_width="50.0dip"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textSize="14.0dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textBuyUnit"
+                style="@style/style_13_9F9F9F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:paddingLeft="20.0dip"
+                android:singleLine="true"
+                android:text="件" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/style_13_9F9F9F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="单价：" />
+
+            <TextView
+                android:id="@+id/textPrice"
+                style="@style/style_14_C21513_BOLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+
+            <TextView
+                style="@style/style_13_9F9F9F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:paddingLeft="10.0dip"
+                android:singleLine="true"
+                android:text="小计：" />
+
+            <TextView
+                android:id="@+id/textTotalValue"
+                style="@style/style_14_C21513_BOLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textdients"
+            style="@style/style_13_808183_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:paddingRight="15.0dip"
+            android:singleLine="true"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="71.0dip"
+        android:layout_height="44.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/textDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@anim/head_button"
+            android:gravity="center"
+            android:text="删除"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>

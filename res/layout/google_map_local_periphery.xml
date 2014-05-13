@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res/ms.activitys"
+    android:id="@+id/RelativeLayout_catalog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#BDBDBD" >
+
+    <LinearLayout
+        android:id="@+id/search_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0.0dip"
+        android:background="@drawable/bg_actionbar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0.0dip" >
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="3.0dip"
+            android:layout_weight="1.0"
+            android:background="@android:drawable/edit_text"
+            android:hint="@string/menu_lable_179"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textSize="16.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/search_button_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="3.0"
+            android:background="@drawable/btn_bottombar" >
+
+            <ImageView
+                android:id="@+id/search_map_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search_map" />
+
+            <TextView
+                android:id="@+id/search_map_text_view"
+                style="@style/BottomBarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/search_map_image_view"
+                android:includeFontPadding="false"
+                android:paddingLeft="5.0dip"
+                android:text="@string/mybill_list_lable_1"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/search_bar_layout_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar_layout"
+        android:background="@drawable/seperate_line" />
+
+    <FrameLayout
+        android:id="@+id/map_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/search_bar_layout_img"
+        android:orientation="vertical" >
+
+        <ViewFlipper
+            android:id="@+id/details"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.0"
+            android:flipInterval="1000"
+            android:persistentDrawingCache="animation" >
+
+            <!--
+            android:inAnimation="@anim/activity_close_exit"  
+			android:outAnimation="@anim/activity_open_enter"
+            -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <com.google.android.maps.MapView
+                        android:id="@+id/map_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:apiKey="0XYezhrIN6SbULCiJb-2RREh9RGbPdQb7-LBToA"
+                        android:clickable="true" />
+
+                    <LinearLayout
+                        android:id="@+id/zoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <!-- 0XYezhrIN6SZDp7Qsstwzz_J-bsia8TUqT-bG1Q -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <!--
+                        <RelativeLayout android:id="@+id/btn_header"
+						android:layout_alignParentTop="true"
+						android:orientation="horizontal"
+						android:background="@drawable/top_bg" android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<LinearLayout android:orientation="horizontal"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+							<Spinner android:id="@+id/Spinner01"   
+				               android:layout_width="wrap_content"  
+				               android:layout_height="wrap_content"></Spinner> 
+				            <Spinner android:id="@+id/meter"   
+				               android:layout_width="wrap_content"  
+				               android:layout_height="wrap_content"></Spinner> 
+							<Button android:id="@+id/search_cards_btn"
+								android:layout_width="70px" android:layout_height="70px"
+								android:layout_alignParentBottom="true"
+								android:layout_alignParentRight="true" android:text="@string/mybill_list_lable_1"
+								android:textColor="#FFFFFFFF" android:layout_marginRight="0dip"
+								android:textStyle="bold"
+								android:paddingLeft="5px"
+								android:background="@drawable/myselection" />
+						</LinearLayout>
+						</RelativeLayout>
+                -->
+
+                <ListView
+                    android:id="@+id/ListView_cards"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/btn_header"
+                    android:background="#FFFFFFFF"
+                    android:fadingEdge="none"
+                    android:scrollingCache="false"
+                    android:visibility="gone" >
+                </ListView>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/btn_header" >
+
+                    <ProgressBar
+                        android:id="@+id/probar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:indeterminateDrawable="@drawable/my_progressbar_bg_color" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ViewFlipper>
+
+        <TextView
+            android:id="@+id/zg_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#86222222"
+            android:gravity="center"
+            android:text=""
+            android:visibility="gone" />
+        <!--
+        <LinearLayout android:visibility="gone" android:layout_gravity="bottom|left" android:id="@+id/sort_layout" android:orientation="vertical" android:background="@drawable/bg_sort_popup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+			<LinearLayout android:orientation="vertical" android:background="@drawable/bg_sort_option_row" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			    <View android:id="@+id/sort_option_divider" android:layout_width="fill_parent" android:layout_height="@dimen/two_pixels" />
+			    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="15.0dip">
+			        <ImageView android:src="@drawable/map_hotel_icon" android:id="@+id/sort_option_image" android:layout_width="30.0dip" android:layout_height="wrap_content" android:scaleType="center" />
+			        <TextView android:text="酒店" android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/sort_option_text_color" android:id="@+id/sort_option_text" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:shadowColor="#ffffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="0.1" />
+			    </LinearLayout>
+			 </LinearLayout>
+			 <LinearLayout android:orientation="vertical" android:background="@drawable/bg_sort_option_row" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			    <View android:id="@+id/sort_option_divider" android:background="@drawable/main_line" android:layout_width="fill_parent" android:layout_height="@dimen/two_pixels" />
+			    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="15.0dip">
+			        <ImageView android:src="@drawable/map_clothing_icon" android:id="@+id/sort_option_image" android:layout_width="30.0dip" android:layout_height="wrap_content" android:scaleType="center" />
+			        <TextView android:text="购物" android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/sort_option_text_color" android:id="@+id/sort_option_text" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:shadowColor="#ffffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="0.1" />
+			    </LinearLayout>
+			 </LinearLayout>
+			 <LinearLayout android:orientation="vertical" android:background="@drawable/bg_sort_option_row" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			    <View android:id="@+id/sort_option_divider" android:background="@drawable/main_line" android:layout_width="fill_parent" android:layout_height="@dimen/two_pixels" />
+			    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="15.0dip">
+			        <ImageView android:src="@drawable/map_repast_icon" android:id="@+id/sort_option_image" android:layout_width="30.0dip" android:layout_height="wrap_content" android:scaleType="center" />
+			        <TextView android:text="吃饭" android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/sort_option_text_color" android:id="@+id/sort_option_text" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:shadowColor="#ffffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="0.1" />
+			    </LinearLayout>
+			 </LinearLayout>
+		</LinearLayout>
+        -->
+
+        <ms.activitys.map.Panel
+            android:id="@+id/type_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/details"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.3"
+            panel:animationDuration="1200"
+            panel:closedHandle="@null"
+            panel:content="@+id/type_content"
+            panel:handle="@+id/type_info_text_view"
+            panel:openedHandle="@drawable/search_results_drawer_handle"
+            panel:position="bottom"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/type_info_text_view"
+                android:layout_width="fill_parent"
+                android:layout_height="32.0dip"
+                android:background="@drawable/search_results_drawer_handle"
+                android:gravity="center"
+                android:padding="2.0dip"
+                android:shadowColor="#88ffffff"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="0.1"
+                android:singleLine="true"
+                android:text="@string/map_lable_4"
+                android:textColor="#ff3d404f"
+                android:textSize="12.0dip" />
+            <!-- <include android:id="@id/drawer_content" layout="@layout/include_drawer_content" /> -->
+
+            <LinearLayout
+                android:id="@+id/type_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#BDBDBD"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/one_pixel"
+                    android:background="#ffb5b5b5" />
+
+                <GridView
+                    android:id="@+id/GridView_ctypes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ms.activitys.map.Panel>
+
+        <ms.activitys.map.Panel
+            android:id="@+id/bottomPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/details"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.3"
+            panel:animationDuration="1200"
+            panel:closedHandle="@null"
+            panel:content="@+id/drawer_content"
+            panel:handle="@+id/filter_info_text_view"
+            panel:openedHandle="@drawable/search_results_drawer_handle"
+            panel:position="bottom"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/filter_info_text_view"
+                android:layout_width="fill_parent"
+                android:layout_height="32.0dip"
+                android:background="@drawable/search_results_drawer_handle"
+                android:gravity="center"
+                android:padding="2.0dip"
+                android:shadowColor="#88ffffff"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="0.1"
+                android:singleLine="true"
+                android:text="@string/menu_lable_176"
+                android:textColor="#ff3d404f"
+                android:textSize="12.0dip" />
+            <!-- <include android:id="@id/drawer_content" layout="@layout/include_drawer_content" /> -->
+
+            <LinearLayout
+                android:id="@+id/drawer_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#BDBDBD"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/one_pixel"
+                    android:background="#ffb5b5b5" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6.0dip" >
+
+                    <EditText
+                        android:id="@+id/filter_hotel_name_edit_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:hint="@string/menu_lable_178"
+                        android:singleLine="true"
+                        android:textSize="16.0sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radius_filter_button_group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="8.0dip" >
+
+                        <RadioButton
+                            android:id="@+id/radius_small_button"
+                            style="@style/CustomLeftMapRadioBtn"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="@string/menu_lable_166"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/radius_medium_button"
+                            style="@style/CustomCenterMapRadioBtn"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0dip"
+                            android:layout_weight="1.0"
+                            android:text="@string/menu_lable_167"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/radius_large_button"
+                            style="@style/CustomCenterMapRadioBtn"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0dip"
+                            android:layout_weight="1.0"
+                            android:text="@string/menu_lable_168"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/radius_all_button"
+                            style="@style/CustomRightMapRadioBtn"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0dip"
+                            android:layout_weight="1.0"
+                            android:checked="true"
+                            android:text="@string/map_lable_10"
+                            android:textStyle="bold" />
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rating_filter_button_group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="8.0dip" >
+
+                        <RadioButton
+                            android:id="@+id/rating_low_button"
+                            style="@style/CustomLeftMapRadioBtn"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:drawableBottom="@drawable/btn_filter_rating_low"
+                            android:text="3+"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rating_medium_button"
+                            style="@style/CustomCenterMapRadioBtn"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0dip"
+                            android:layout_weight="1.0"
+                            android:drawableBottom="@drawable/btn_filter_rating_medium"
+                            android:text="4+"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rating_high_button"
+                            style="@style/CustomCenterMapRadioBtn"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0dip"
+                            android:layout_weight="1.0"
+                            android:drawableBottom="@drawable/btn_filter_rating_high"
+                            android:text="5"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rating_all_button"
+                            style="@style/CustomRightMapRadioBtn"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0dip"
+                            android:layout_weight="1.0"
+                            android:checked="true"
+                            android:text="@string/map_lable_10"
+                            android:textStyle="bold" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </ms.activitys.map.Panel>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/bottomPanel"
+        android:gravity="bottom" >
+
+        <LinearLayout
+            android:id="@+id/bottom_bar_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_actionbar"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/search_ly"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/sort_button_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_left_bottombar"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/sort_button_circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/triangle_button_circle" />
+
+                    <FrameLayout
+                        android:id="@+id/up_arrow_sort_hotels_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/sort_button_circle"
+                        android:layout_alignLeft="@id/sort_button_circle"
+                        android:layout_alignRight="@id/sort_button_circle"
+                        android:layout_alignTop="@id/sort_button_circle"
+                        android:layout_centerVertical="true" >
+
+                        <ImageView
+                            android:id="@+id/up_arrow_sort_hotels"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="@dimen/one_pixel"
+                            android:src="@drawable/triangle_button_triangle" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/sort_text_view"
+                        style="@style/BottomBarText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/up_arrow_sort_hotels_container"
+                        android:paddingLeft="5.0dip"
+                        android:text="@string/menu_lable_177"
+                        android:textSize="14.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sort_type_text_view"
+                        style="@style/BottomBarText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/sort_text_view"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+                <!--
+                            <RelativeLayout android:gravity="center" android:id="@+id/search_map_button_layout" android:background="@drawable/btn_left_bottombar" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+				                <ImageView android:id="@+id/search_map_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_map" android:layout_centerVertical="true" />
+				                <TextView android:textSize="14.0sp" android:textStyle="bold" android:id="@+id/search_map_text_view" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_search_button" android:includeFontPadding="false" android:layout_toRightOf="@id/search_map_image_view" android:layout_centerVertical="true" style="@style/BottomBarText" />
+				            </RelativeLayout>
+                -->
+
+                <RelativeLayout
+                    android:id="@+id/filter_button_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bottombar"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/filter_button_circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/triangle_button_circle" />
+
+                    <FrameLayout
+                        android:id="@+id/up_arrow_filter_hotels_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/filter_button_circle"
+                        android:layout_alignLeft="@id/filter_button_circle"
+                        android:layout_alignRight="@id/filter_button_circle"
+                        android:layout_alignTop="@id/filter_button_circle"
+                        android:layout_centerVertical="true" >
+
+                        <ImageView
+                            android:id="@+id/up_arrow_filter_hotels"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="@dimen/one_pixel"
+                            android:src="@drawable/triangle_button_triangle" />
+                    </FrameLayout>
+
+                    <TextView
+                        style="@style/BottomBarText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/up_arrow_filter_hotels_container"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="5.0dip"
+                        android:text="@string/filter_hotels"
+                        android:textSize="14.0sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/view_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@id/search_ly"
+                android:layout_weight="6.0"
+                android:background="@null"
+                android:src="@drawable/btn_actionbar_list" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom_bar_layout"
+            android:background="@drawable/seperate_line" />
+    </RelativeLayout>
+
+</RelativeLayout>

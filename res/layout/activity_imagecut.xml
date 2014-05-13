@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <ms.globalclass.imagegrid.MyDragImageView
+        android:id="@+id/imagecut_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imagecut_maskRL" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imagecut_mask"
+            android:layout_alignParentTop="true"
+            android:background="#a0000000" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagecut_mask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mm_capture" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imagecut_foot"
+            android:layout_below="@+id/imagecut_mask"
+            android:background="#a0000000" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/imagecut_foot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/mmtitle_bg_alpha" >
+
+            <Button
+                android:id="@+id/imagecut_backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/foot_btn_cameraback" />
+
+            <Button
+                android:id="@+id/imagecut_saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/foot_btn_cameraok" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

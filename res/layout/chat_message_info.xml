@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D8D8D8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/break_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_lable"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hotel_label_110"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <!--
+                         <ImageButton
+		                android:id="@+id/move_btn"
+		                android:layout_width="60dp"
+		                android:layout_height="wrap_content"
+		                android:layout_marginBottom="5dip"
+		                android:layout_marginRight="5dip"
+		                android:layout_marginTop="5dip"
+		                android:background="@drawable/title_btn_right"
+		                android:clickable="true"
+		                android:onClick="openUnfollowConfirm"
+		                android:src="@drawable/mm_title_btn_menu_normal"
+		                android:textColor="#FFFFFF"
+		                android:textSize="12dip"
+		                android:textStyle="bold" />
+            -->
+        </LinearLayout>
+    </LinearLayout>
+		    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" >
+        
+	    <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical" >
+	    
+		    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_marginTop="10dip">
+			        <LinearLayout android:id="@+id/img_groud_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="10dip" android:background="@drawable/sayhello_tip_bg" android:gravity="center_vertical">
+			            <LinearLayout android:id="@+id/friend_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:onClick="user_info">
+			                <ms.globalclass.image.RoundAngleImageView
+					            android:id="@+id/iv_userhead"
+					            android:layout_width="60dip"
+					            android:layout_height="60dip"
+					            android:layout_alignParentRight="true"
+					            android:layout_alignParentTop="true"
+					            android:focusable="false"
+					            app:roundHeight="10dp"
+					            app:roundWidth="10dp"
+					            android:src="@drawable/default_avatar_shadow" />
+			                <TextView
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:padding="3dp"
+					            android:id="@+id/name_txt"
+					            android:text=""
+					            android:textColor="#fff"
+					            android:textSize="14sp" />
+			            </LinearLayout>
+			            
+			            <LinearLayout android:id="@+id/friend_layout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:layout_marginLeft="30dip" android:onClick="add_user">
+			                <ImageView
+					            android:id="@+id/iv_add_img"
+					            android:layout_width="60dip"
+					            android:layout_height="60dip"
+					            android:layout_alignParentRight="true"
+					            android:layout_alignParentTop="true"
+					            android:focusable="false"
+					            android:src="@drawable/roominfo_add_btn" />
+			                <TextView
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:padding="3dp"
+					            android:text=""
+					            android:textColor="#fff"
+					            android:textSize="14sp" />
+			            </LinearLayout>
+			
+			            <GridView
+			                android:id="@+id/gridview"
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+			                android:columnWidth="60dp"
+			                android:gravity="center"
+			                android:horizontalSpacing="10dp"
+			                android:numColumns="4"
+			                android:stretchMode="columnWidth"
+			                android:verticalSpacing="5dp" />
+					</LinearLayout>
+		        
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="14dp"
+			        android:background="@drawable/preference_single_item"
+			        android:clickable="true"
+			        android:gravity="center_vertical"
+			        android:id="@+id/group_name_rl" >
+			
+			        <TextView
+			            android:id="@+id/lable_text"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerVertical="true"
+			            android:padding="8dp"
+			            android:text="@string/hotel_label_155"
+			            android:textColor="#000"
+			            android:textSize="17sp" />
+			
+			        <ImageView
+			            android:id="@+id/top_img"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:scaleType="matrix"
+			            android:src="@drawable/mm_submenu" />
+			        
+			         <TextView
+			            android:id="@+id/group_name_txt"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="right"
+			            android:layout_centerVertical="true"
+			            android:padding="8dp"
+			            android:layout_toLeftOf="@id/top_img"
+			            android:layout_toRightOf="@id/lable_text"
+			            android:text="@string/hotel_label_156"
+			            android:ellipsize="end"
+	            		android:lines="1"
+			            android:textColor="#848484"
+			            android:textSize="17sp" />
+			</RelativeLayout>
+		    
+		    <RelativeLayout
+		        	android:id="@+id/order_layout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="14dp"
+			        android:background="@drawable/preference_single_item"
+			        android:clickable="true"
+			        android:visibility="gone"
+			        android:gravity="center_vertical"
+			        android:onClick="openOrderList" >
+			
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerVertical="true"
+			            android:padding="8dp"
+			            android:text="@string/hotel_label_128"
+			            android:textColor="#000"
+			            android:textSize="17sp" />
+			
+			        <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:scaleType="matrix"
+			            android:src="@drawable/mm_submenu" />
+			 </RelativeLayout>
+		    
+		    <RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="14dp"
+			        android:background="@drawable/preference_single_item"
+			        android:clickable="true"
+			        android:gravity="center_vertical"
+			        android:onClick="always_on_top" >
+			
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerVertical="true"
+			            android:padding="8dp"
+			            android:text="@string/hotel_label_111"
+			            android:textColor="#000"
+			            android:textSize="17sp" />
+			
+			        <CheckBox
+			            android:id="@+id/check_top"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:scaleType="matrix"
+			            android:clickable="true"
+			            android:button="@drawable/mm_checkbox_btn" />
+			 </RelativeLayout>
+			 
+		     <RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="14dp"
+			        android:background="@drawable/preference_single_item"
+			        android:clickable="true"
+			        android:gravity="center_vertical"
+			        android:onClick="search_chatting_content" >
+			
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerVertical="true"
+			            android:padding="8dp"
+			            android:text="@string/hotel_label_113"
+			            android:textColor="#000"
+			            android:textSize="17sp" />
+			
+			        <ImageView
+			            android:id="@+id/top_img"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:scaleType="matrix"
+			            android:src="@drawable/mm_submenu" />
+			 </RelativeLayout>
+			 
+		     <RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="14dp"
+			        android:background="@drawable/preference_single_item"
+			        android:clickable="true"
+			        android:gravity="center_vertical"
+			        android:onClick="clear_chatting_history" >
+			
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerVertical="true"
+			            android:padding="8dp"
+			            android:text="@string/hotel_label_114"
+			            android:textColor="#000"
+			            android:textSize="17sp" />
+			
+			        <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:scaleType="matrix"
+			            android:src="@drawable/mm_submenu" />
+			 </RelativeLayout>
+			 
+		
+		     <Button
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_marginBottom="14dp"
+		         android:layout_marginLeft="12dp"
+		         android:layout_marginRight="12dp"
+		         android:layout_marginTop="14dp"
+		         android:background="@drawable/btn_style_red"
+		         android:gravity="center"
+		         android:id="@+id/exit_btn"
+		         android:padding="4dp"
+		         android:text="@string/hotel_label_154"
+		         android:textColor="#fff"
+		         android:textSize="18sp" />
+		</LinearLayout>
+		
+	</ScrollView>
+	
+</LinearLayout>

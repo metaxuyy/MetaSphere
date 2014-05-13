@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ms.globalclass.FriendlyScrollView
+        android:id="@+id/ScrollView02"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:columnWidth="20.0dip"
+                android:gravity="center"
+                android:horizontalSpacing="20.0dip"
+                android:numColumns="auto_fit"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="3.0dip"
+                android:stretchMode="columnWidth"
+                android:tag="gridview"
+                android:background="#E6E6E6"
+                android:verticalSpacing="20.0dip" />
+        </LinearLayout>
+    </ms.globalclass.FriendlyScrollView>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/break_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_lable"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hotel_label_71"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+            <!-- <Button
+                android:id="@+id/card_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_right"
+                android:text="@string/hotel_label_36"
+                android:onClick="refreshStroeInfoList"
+                android:clickable="true"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" /> -->
+            <ImageButton
+                android:id="@+id/add_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_right"
+                android:src="@drawable/mm_title_btn_add_contact_normal"
+                android:onClick="add_friends"
+                android:clickable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#fcfcfc"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lvContact"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <ms.globalclass.listviewadapter.SideBar
+            android:id="@+id/sideBar"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/mm_text_pinyin" />
+    </FrameLayout>
+
+</LinearLayout>

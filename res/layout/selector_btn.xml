@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="90px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/selector" />
+
+    <TextView
+        android:id="@+id/submit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/submit"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center"
+        android:paddingLeft="25.0dip"
+        android:text="@string/order_submit1"
+        android:textColor="#ffab7c4d"
+        android:textSize="20.0sp" />
+
+</RelativeLayout>

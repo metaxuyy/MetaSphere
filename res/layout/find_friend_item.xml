@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mm_listitem"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ms.globalclass.RoundAngleImageView
+            android:id="@+id/head"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            app:roundHeight="5dp"
+            app:roundWidth="5dp"
+            android:src="@drawable/default_avatar_shadow"
+            android:layout_marginLeft="5dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+	
+        <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:text="小黑"
+                android:textColor="#000" />
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="right|center_vertical" android:layout_weight="1.7">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chatfrom_bg_new_fmessage_addicon" android:layout_marginRight="5dip"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_lable_52" android:textColor="#31B404" android:textSize="16dip" android:layout_marginRight="5dip"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="matrix" android:src="@drawable/mm_submenu" android:layout_marginRight="5dip"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

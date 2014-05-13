@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/contactitem_catalog"
+        style="@style/MMListCatalog"
+        android:layout_height="wrap_content"
+        android:paddingRight="4.0dip" />
+
+    <LinearLayout
+        android:id="@+id/contactitem_layout"
+        style="@style/MMListItem"
+        android:layout_height="56.0dip"
+        android:background="@drawable/mm_listitem"
+        android:paddingLeft="8.0dip" >
+
+        <ms.globalclass.image.RoundAngleImageView
+            android:id="@+id/contactitem_avatar_iv"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:src="@drawable/default_avatar"
+            app:roundHeight="10dp"
+            app:roundWidth="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="8.0dip" >
+
+            <TextView
+                android:id="@+id/contactitem_nick"
+                style="@style/MMFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dddddd"
+                android:singleLine="true" />
+            
+            <TextView
+                android:id="@+id/phone_number"
+                style="@style/MMFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textSize="12dip"
+                android:singleLine="true" />
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/add_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:visibility="gone" android:paddingRight="10dip">
+            <ImageView
+                android:id="@+id/add_icon"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:scaleType="matrix"
+                   android:src="@drawable/chatfrom_bg_new_fmessage_addicon" />
+            <TextView
+                android:id="@+id/sart_txt"
+                style="@style/MMFontTitleInList"
+                android:text=""
+                android:layout_marginLeft="3dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#31B404"
+                android:textSize="12dip"
+                android:singleLine="true" />
+            <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:scaleType="matrix"
+                   android:src="@drawable/mm_submenu" />
+        </LinearLayout>
+        
+        <!-- <CheckBox
+            android:id="@+id/contactitem_select_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="21.0dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" /> -->
+    </LinearLayout>
+
+</LinearLayout>

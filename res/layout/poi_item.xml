@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selector_menu_bg_list_item"
+    android:orientation="horizontal"
+    android:paddingLeft="5.0dip" >
+
+    <FrameLayout
+        android:id="@+id/layoutImg"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="3.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="3.0dip" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_photoframe" />
+
+        <ImageView
+            android:id="@+id/imgMask"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:src="@drawable/pic_mask" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="3.0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lblName"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip"
+            android:paddingTop="3.0dip"
+            android:textColor="#000000"
+            android:textSize="14.0dip"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip"
+            android:orientation="horizontal" >
+
+            <RatingBar
+                android:id="@+id/five_star_img"
+                style="@style/my_ratingbar_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true" />
+
+            <ImageView
+                android:id="@+id/pimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblNote"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="12.0dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

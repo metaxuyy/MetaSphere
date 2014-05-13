@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/integral"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_backgroud"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="#75000000"
+                android:shadowDy="2.0"
+                android:shadowRadius="2.0"
+                android:text="@string/menu_lable_39"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_button_group_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/start_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mybill_list_lable_9"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:id="@+id/checkin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="checkin"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate_line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mybill_list_lable_10"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:id="@+id/checkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="checkout"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/change_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/change_date"
+                android:gravity="center"
+                android:padding="5.0dip"
+                android:text="@string/mybill_list_lable_1"
+                android:textColor="#ffffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListView02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/listview_item_line"
+        android:listSelector="@anim/index_item_bg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/progLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/dialog_style_xml_icon" />
+        <!-- mce_style="?android:attr/progressBarStyleLarge" -->
+
+        <TextView
+            android:id="@+id/progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/locations_data"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

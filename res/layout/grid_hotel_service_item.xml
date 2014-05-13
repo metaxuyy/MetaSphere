@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/market_detail_pic_bg"
+        android:layout_gravity="center" >
+
+        <!-- <ms.globalclass.image.RoundAngleImageView
+            android:id="@+id/item_img"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dip"
+            app:roundHeight="10dp"
+            app:roundWidth="10dp"
+            android:src="@drawable/default_avatar_shadow" /> -->
+        <ms.globalclass.StaggeredGridView.ScaleImageView
+		        android:id="@+id/item_img"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:src="@null" />
+
+        <TextView
+            android:id="@+id/new_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/navigation_ts"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="16dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name_txt"
+        style="@style/TextStyle"
+        android:layout_width="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:shadowColor="#ffffffff"
+        android:background="@drawable/timeline_retweet_background_highlighted"
+        android:text=""
+        android:textColor="#000000"
+        android:maxLines="1"
+		android:ellipsize="end"
+        android:textSize="16dip"
+        android:textStyle="bold" />
+
+</FrameLayout>

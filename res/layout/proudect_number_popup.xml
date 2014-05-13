@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="3.0dip"
+    android:paddingLeft="3.0dip"
+    android:paddingRight="1.0dip"
+    android:paddingTop="9.0dip" >
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="54.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_template"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="6.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/widget35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_lable_11"
+                android:textColor="#FFFFFFFF" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12.0dip"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="2.0dip" >
+
+            <LinearLayout
+                android:id="@+id/comment_layout5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:text="@string/produce_num2"
+                    android:textColor="#000000"
+                    android:textSize="22.0dip" />
+
+                <ImageView
+                    android:id="@+id/cut_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/number_minus" />
+
+                <TextView
+                    android:id="@+id/p_numbre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/number_bg"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="22.0dip" />
+
+                <ImageView
+                    android:id="@+id/plus_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/number_plus" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/customPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <FrameLayout
+            android:id="@+id/custom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="54.0dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/titleDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popup_divider"
+            android:gravity="fill_horizontal"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="2.0dip"
+            android:paddingRight="2.0dip"
+            android:paddingTop="10.0dip" >
+
+            <LinearLayout
+                android:id="@+id/leftSpacer"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/determine_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myselection"
+                android:text="@string/coupon_lable_14"
+                android:textColor="#FFFFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/clear_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/determine_btn"
+                android:background="@drawable/myselection"
+                android:paddingLeft="2px"
+                android:text="@string/coupon_lable_16"
+                android:textColor="#FFFFFFFF"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/rightSpacer"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

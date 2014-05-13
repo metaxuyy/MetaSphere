@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!--
+      <TextView android:id="@+id/spinnerText"  
+                android:layout_width="fill_parent"   
+                android:layout_height="wrap_content"></TextView>  
+      <Spinner android:id="@+id/Spinner01"   
+               android:layout_width="fill_parent"  
+               android:layout_height="wrap_content"></Spinner>
+    -->
+
+    <GridView
+        android:id="@+id/GridView_ctypes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </GridView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/distance_meter" >
+    </TextView>
+
+    <Spinner
+        android:id="@+id/meter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </Spinner>
+
+</LinearLayout>

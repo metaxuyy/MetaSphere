@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg"
+        android:gravity="left" >
+
+        <ImageView
+            android:id="@+id/log_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5.0dip"
+            android:src="@drawable/sina_log" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:shadowColor="#75000000"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:text="@string/weibo_lable_1"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/uaser_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:hint="@string/weibo_loginname" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:hint="@string/weibo_loginpwd"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:gravity="center"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <Button
+            android:id="@+id/assent_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"
+            android:background="@drawable/myselection"
+            android:gravity="center"
+            android:paddingLeft="5px"
+            android:paddingRight="5px"
+            android:text="@string/weibo_loginagree"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="0dip"
+            android:background="@drawable/myselection"
+            android:gravity="center"
+            android:paddingLeft="5px"
+            android:paddingRight="5px"
+            android:text="@string/coupon_lable_16"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

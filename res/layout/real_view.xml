@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/real_view_position_relative_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/real_view_position_surfaceview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/realview_position_bg" />
+
+        <LinearLayout
+            android:id="@+id/liner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+"
+    	   
+            <!-- <ImageView android:id="@+id/round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/round" android:layout_x="38px" android:layout_y="95px"/> -->
+        </LinearLayout>
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/real_view_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="1000.0sp"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/real_view_point_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/real_view_point" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5.0sp"
+                    android:layout_toRightOf="@id/real_view_point_img"
+                    android:background="@drawable/realview_balck_bj2" >
+
+                    <TextView
+                        android:id="@+id/real_view_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:text="aaaaaaaaaa"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/real_view_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/real_view_title"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:text="dddddddddd"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18.0sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1000.0sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

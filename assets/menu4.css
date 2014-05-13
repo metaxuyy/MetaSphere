@@ -1,0 +1,148 @@
+html, body {
+	color:#222;
+	font-family:Microsoft YaHei,Helvitica,Verdana,Tohoma,Arial,san-serif;
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+img {
+	border:0;
+}
+ol, ul {
+	list-style: none outside none;
+	margin:0;
+	padding: 0;
+}
+a {
+	color:#000000;
+	text-decoration: none;
+}
+#cate8{background-color: #151515; overflow-x: hidden;margin:0 auto;}
+#cate8 .mainmenu {
+	width:100%;
+	display:block; 
+    margin:0;
+}
+/*#cate8 .mainmenu li {
+	width:50%;
+	float:left;
+	overflow:hidden;
+	border-radius: 0px;
+}*/
+#cate8 .mainmenu .li40{
+	width:40%; float:left; height:105px; padding-bottom:5px;
+}
+#cate8 .mainmenu .li30{
+	width:30%; float:left; height:50px; padding-bottom:5px;
+}
+#cate8 .mainmenu .li100h50{
+	width:100%; float:left; height:50px; padding-bottom:5px;
+}
+#cate8 .mainmenu .li100h40{
+	width:100%; float:left; height:40px; padding-bottom:5px;
+}
+#cate8 .mainmenu .li50{
+	width:50%; float:left; height:80px; padding-bottom:5px;
+}
+#cate8 .mainmenu .btn40blue{
+	/*background-color:#47aaec;*/ 
+	height:105px;
+	background:-webkit-gradient(linear, right top, left bottom, from(#76c6ed), to(#1ba0e1));
+}
+#cate8 .mainmenu .btn30green{
+	/*background-color:#7bc351;*/ 
+	height:50px;
+	background:-webkit-gradient(linear, right top, left bottom, from(#bbd87d), to(#8ebe26));
+}
+#cate8 .mainmenu .btn30purple{
+	/*background-color:#be7cd9;*/
+	height:50px;
+	background:-webkit-gradient(linear, right top, left bottom, from(#aa73a1), to(#711663));
+}
+#cate8 .mainmenu .btn30yellow{
+	/*background-color:#f7c708;*/
+	height:50px;
+	background:-webkit-gradient(linear, right top, left bottom, from(#ffbc54), to(#fea73f));
+}
+#cate8 .mainmenu .btn30grey{
+	/*background-color:#646a85;*/ 
+	height:50px;
+	background:-webkit-gradient(linear, right top, left bottom, from(#c5c5c5), to(#646a85));
+}
+#cate8 .mainmenu .btn100h50red{
+	/*background-color:#F30;*/ 
+	height:50px;
+	background:-webkit-gradient(linear, right top, left bottom, from(#ff7319), to(#F30));
+}
+#cate8 .mainmenu .btn100h40blue{
+	/*background-color:#088ead;*/ 
+	height:40px;
+	background:-webkit-gradient(linear, right top, left bottom, from(#6d91b3), to(#0b4781));
+}
+#cate8 .mainmenu .btn50green{
+	/*background-color:#18c363;*/ 
+	height:80px;
+	background:-webkit-gradient(linear, right top, left bottom, from(#85c285), to(#339933));
+}
+#cate8 .mainmenu .btn50yellow{
+	/*background-color:#feab44;*/ 
+	height:80px;
+	background:-webkit-gradient(linear, right top, left bottom, from(#ffe300), to(#feab44));
+}
+#cate8 .mainmenu .ptext{
+	color:#FFFFFF; font-size:12px;
+}
+#cate8 .mainmenu .ptexth80{
+	width:100%; position:relative; margin-top:-40px; margin-left:80px;
+}
+#cate8 .mainmenu .ptexth50{
+	width:100%; position:relative; margin-top:-20px; text-align:center;
+}
+#cate8 .mainmenu li .menubtn {
+	text-decoration:none;
+	color:#000;
+	overflow:hidden;
+	border-radius: 5px;
+	margin:2px;
+}
+
+#cate8 .mainmenu li a {
+	padding:0px;
+	font-size:14px;
+	color: #000000;
+	text-decoration: none;
+}
+
+#cate8 .mainmenu li .menubtn .menuimg {
+	overflow:hidden;
+	position:relative;	
+	text-align:center;
+}
+#cate8 .mainmenu li div .img80 {
+	border:0;
+	width:80px;
+	padding:0;
+	border-radius: 0px;
+}
+#cate8 .mainmenu li div .img60 {
+	border:0;
+	width:60px;
+	padding:0;
+	border-radius: 0px;
+}
+#cate8 .mainmenu li div .img25 {
+	border:0;
+	width:25px;
+	padding:0;
+	border-radius: 0px;
+}
+#cate8 .mainmenu li div .img30 {
+	border:0;
+	width:30px;
+	padding:0;
+	border-radius: 0px;
+}

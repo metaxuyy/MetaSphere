@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@anim/shape_rounded_rectangle"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5.0dip" >
+
+    <TextView
+        android:id="@+id/textOrderIDIcon"
+        style="@style/style_14_9F9F9F_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/order_no_list" />
+
+    <TextView
+        android:id="@+id/textPriceIcon"
+        style="@style/style_14_9F9F9F_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textOrderIDIcon"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="3.0dip"
+        android:text="@string/mybill_list_lable_7" />
+
+    <TextView
+        android:id="@+id/textTimeIcon"
+        style="@style/style_14_9F9F9F_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPriceIcon"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="3.0dip"
+        android:text="@string/menu_lable_114" />
+
+    <TextView
+        android:id="@+id/textStateIcon"
+        style="@style/style_14_9F9F9F_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTimeIcon"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="3.0dip"
+        android:text="@string/order_status_list" />
+
+    <TextView
+        android:id="@+id/textZhiFu"
+        style="@style/style_14_9F9F9F_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textStateIcon"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="3.0dip"
+        android:text="@string/menu_lable_113" />
+
+    <TextView
+        android:id="@+id/textOrderID"
+        style="@style/style_14_C21513_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="5.0dip"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textPrice"
+        style="@style/style_14_C21513_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textOrderID"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="3.0dip"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textTime"
+        style="@style/style_14_C21513_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textPrice"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="3.0dip"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="8.0dip"
+        android:layout_height="13.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textPrice"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/textState"
+        style="@style/style_14_C21513_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textTime"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="3.0dip"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textZhiFuBaoPay"
+        style="@style/style_14_C21513_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textState"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="3.0dip"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:id="@+id/linLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/textZhiFu"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="3.0dip"
+        android:layout_marginTop="3.0dip"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/linOrderPayCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linLine"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textZhiFuBao"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linLine"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:background="@drawable/button_long_red"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:text="@string/menu_lable_119"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textCancelOrder"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5.0dip"
+            android:layout_weight="0.8"
+            android:background="@drawable/button_green_ico"
+            android:gravity="center"
+            android:paddingRight="10.0dip"
+            android:text="@string/cancel_orders"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:id="@+id/main_rlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff8f8f8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/break_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_lable"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/move_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_right_blue"
+                android:clickable="true"
+                android:onClick="uploadMomentsImage"
+                android:text="@string/button_send"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff" >
+
+        <LinearLayout
+            android:id="@+id/upload_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:background="@drawable/sns_edit"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/sns_desc_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/mm_trans"
+                    android:gravity="center_vertical"
+                    android:hint="@string/sns_upload_sns_hint"
+                    android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+                    android:paddingBottom="15.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:paddingTop="15.0dip"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/widget_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/sns_shoot_add_bg"
+                android:minHeight="65.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/image_layout_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dip"
+                        android:focusable="false"
+                        android:src="@drawable/roominfo_add_btn"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dip"
+                        android:focusable="false"
+                        android:src="@drawable/roominfo_add_btn"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dip"
+                        android:focusable="false"
+                        android:src="@drawable/roominfo_add_btn"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dip"
+                        android:focusable="false"
+                        android:src="@drawable/roominfo_add_btn"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/image_layout_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dip"
+                        android:focusable="false"
+                        android:src="@drawable/roominfo_add_btn"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dip"
+                        android:focusable="false"
+                        android:src="@drawable/roominfo_add_btn"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dip"
+                        android:focusable="false"
+                        android:src="@drawable/roominfo_add_btn"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dip"
+                        android:focusable="false"
+                        android:src="@drawable/roominfo_add_btn"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/image_layout_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dip"
+                        android:focusable="false"
+                        android:src="@drawable/roominfo_add_btn"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sns_tag_range"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.0dip"
+                android:background="@drawable/sns_upload_group_item" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingTop="8.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sns_tag_visibl_range"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0dip" />
+
+                    <TextView
+                        android:id="@+id/sns_tag_range_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="@string/sns_tag_friends"
+                        android:textColor="#ff576b95"
+                        android:textSize="16.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_marginLeft="3.0dip"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/mm_submenu" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_contact_no_vis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/sns_shoot_add"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3.0dip"
+                android:paddingTop="5.0dip" >
+
+                <ImageView
+                    android:id="@+id/share_people_novis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="7.0dip"
+                    android:src="@drawable/sns_shoot_at_normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/with_who_tv"
+                    android:layout_width="80.0dip"
+                    android:layout_height="33.0dip"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5.0dip"
+                    android:gravity="left|center"
+                    android:paddingBottom="2.0dip"
+                    android:text="@string/sns_with_you"
+                    android:textColor="#ff999999"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/sns_shoot_add"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3.0dip"
+                android:paddingTop="5.0dip" >
+
+                <ImageView
+                    android:id="@+id/share_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="7.0dip"
+                    android:src="@drawable/sns_shoot_location_normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/with_local_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33.0dip"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5.0dip"
+                    android:gravity="left|center"
+                    android:paddingBottom="2.0dip"
+                    android:text="@string/sns_not_get_location"
+                    android:textColor="#ff999999"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/sns_shoot_add"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3.0dip"
+                android:paddingTop="5.0dip" >
+
+                <ImageView
+                    android:id="@+id/attachment_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="7.0dip"
+                    android:src="@drawable/sns_shoot_attachment_normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/attachment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33.0dip"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5.0dip"
+                    android:gravity="left|center"
+                    android:paddingBottom="2.0dip"
+                    android:text="@string/sns_not_add_attachment"
+                    android:textColor="#ff999999"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/publishBoardAttLL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

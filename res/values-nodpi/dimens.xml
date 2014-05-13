@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="one_pixel">1.0px</dimen>
+    <dimen name="two_pixels">2.0px</dimen>
+
+</resources>

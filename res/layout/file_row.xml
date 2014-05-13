@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <CheckBox
+        android:id="@+id/fileSel_checkBox"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/checkbox_selector"
+        android:button="@null"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6px" >
+
+        <ImageView
+            android:id="@+id/fileSel_icon"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:src="@drawable/doc" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/fileSel_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="doc" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

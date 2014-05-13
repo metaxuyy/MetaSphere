@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exit_layout"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/confirm_dialog_bg2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="5dp"
+        android:text="@string/hotel_label_148"
+        android:textColor="#333"
+        android:textSize="20sp" />
+
+     <ProgressBar  
+	    android:id="@+id/progress"  
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content"  
+	    android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+	    style="?android:attr/progressBarStyleHorizontal"  
+	  />  
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="33dp" >
+
+        <Button
+            android:id="@+id/exitBtn1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_style_white"
+            android:gravity="center"
+            android:text="@string/sns_has_liked"
+            android:textColor="#333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

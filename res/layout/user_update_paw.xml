@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f8ff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginTop="6.0dip" >
+
+            <TextView
+                style="@style/List_Item_Header"
+                android:text="@string/olds_pwd" />
+
+            <EditText
+                android:id="@+id/oldpassword"
+                style="@style/Edt_AppForm"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:background="#10000000" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginTop="6.0dip" >
+
+            <TextView
+                style="@style/List_Item_Header"
+                android:text="@string/news_pwd" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/Edt_AppForm"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:background="#10000000" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginTop="6.0dip" >
+
+            <TextView
+                style="@style/List_Item_Header"
+                android:text="@string/cfm_pwd" />
+
+            <EditText
+                android:id="@+id/password2"
+                style="@style/Edt_AppForm"
+                android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

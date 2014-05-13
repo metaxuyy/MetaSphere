@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:addStatesFromChildren="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblCurrentSpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="#ff000000"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/lblNextSpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100.0dip"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="#ff000000"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/lblTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="10.0dip" />
+
+</LinearLayout>

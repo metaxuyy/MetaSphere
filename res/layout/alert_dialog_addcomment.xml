@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/mmfooter_bg_white" >
+
+    <LinearLayout
+        android:id="@+id/addComment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/addComment_et"
+            style="@style/MMEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/chat_edit"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+ 			android:maxLines="3"
+            android:singleLine="false" />
+        
+		<Button
+            android:id="@+id/addComment_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dip"
+            android:textSize="18sp"
+            android:background="@drawable/btnsendselector"
+            android:text="@string/button_send" />
+		
+    </LinearLayout>
+</ScrollView>

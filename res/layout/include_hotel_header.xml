@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mobiata="http://schemas.android.com/apk/res/com.expedia.bookings"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="ddddddd"
+        android:textColor="#ffe1e1e1"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/user_rating_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/btn_user_reviews"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_rating_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5.0dip"
+                android:text=""
+                android:textColor="#ffe1e1e1"
+                android:textSize="12.0sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/user_rating_bar"
+                style="@style/RatingBarSmall.Shadowed.UserReview.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.5" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/book_now_button"
+            style="@style/Widget.Button.Orange"
+            android:layout_width="@dimen/header_button_width"
+            android:layout_height="@dimen/header_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="5.0dip"
+            android:maxLines="1"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip"
+            android:text="@string/book_now"
+            android:textSize="15.0dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/location_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" /> -->
+        
+    <LinearLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+            
+            <!-- <Button
+                android:id="@+id/break_btn"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" /> -->
+                
+             <Button
+                android:id="@+id/book_now_button"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_right"
+                android:text="@string/hotel_label_38"
+                android:textColor="#FFFFFF"
+                android:onClick="onpenBooking"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name_text_view"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/mone_button"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:onClick="btnmainright"
+                android:background="@drawable/title_btn_right"
+                android:src="@drawable/mm_title_btn_menu_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

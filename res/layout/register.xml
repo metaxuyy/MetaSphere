@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/clear_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_lable"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/vip_create1"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/rcontent_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip" 
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/img_rlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="170.0px"
+                android:layout_marginBottom="10.0dip"
+                android:background="@drawable/talk_room_banner_bg_on" >
+
+                <ms.globalclass.image.RoundAngleImageView
+                    android:id="@+id/info_image"
+                    android:layout_width="140.0px"
+                    android:layout_height="140.0px"
+                    android:layout_marginLeft="10.0px"
+                    android:layout_marginTop="10.0px"
+                    android:src="@drawable/default_avatar_shadow" />
+
+                <TextView
+                    android:id="@+id/info_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0px"
+                    android:layout_marginTop="6.0px"
+                    android:layout_toRightOf="@id/info_image"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxWidth="210.0px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20.0px"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/userPhotoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20.0dip"
+                    android:layout_marginLeft="8.0px"
+                    android:layout_marginTop="18.0px"
+                    android:layout_toRightOf="@id/info_image"
+                    android:background="@drawable/selector_bg_btn"
+                    android:text="@string/vip_avatar2" />
+                <!-- <Button android:id="@+id/userDetailsBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0px" android:layout_marginTop="18.0px" android:layout_toRightOf="@id/userPhotoBtn" android:layout_below="@id/info_account" /> -->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0px"
+                android:layout_marginRight="8.0px"
+                android:layout_marginTop="5.0px"
+                android:background="@drawable/shape4"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginTop="6.0dip" >
+
+                    <TextView
+                        style="@style/List_Item_Header"
+                        android:text="@string/vip_username3" />
+
+                    <EditText
+                        android:id="@+id/loginName"
+                        style="@style/Edt_AppForm" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="#10000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginTop="6.0dip" >
+
+                    <TextView
+                        style="@style/List_Item_Header"
+                        android:text="Email：" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        style="@style/Edt_AppForm" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="#10000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginTop="6.0dip" >
+
+                    <TextView
+                        style="@style/List_Item_Header"
+                        android:text="@string/vip_loginpwd4" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        style="@style/Edt_AppForm"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="#10000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginTop="6.0dip" >
+
+                    <TextView
+                        style="@style/List_Item_Header"
+                        android:text="@string/cfm_pwd" />
+
+                    <EditText
+                        android:id="@+id/password2"
+                        style="@style/Edt_AppForm"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="#10000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginTop="6.0dip" >
+
+                    <CheckBox
+                        android:id="@+id/box2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vip_agresss5"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <Button
+                android:id="@+id/add_user_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/btn_style_green"
+                android:gravity="center"
+                android:text="@string/vip_creates6"
+                android:textSize="22dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:textColor="#FFFFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

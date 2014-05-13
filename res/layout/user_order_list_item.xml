@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/conent_message_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/select_bg_message_news_item"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingBottom="25dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+                android:id="@+id/store_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="15dip"
+                android:text="dddd"
+                android:textColor="#000000"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView
+	            android:id="@+id/order_time"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="left"
+	            android:text="dddd"
+	            android:layout_marginTop="5dip"
+	            android:textColor="#A4A4A4"
+	            android:textSize="14dip"
+	            android:textStyle="bold" />
+            <TextView
+	            android:id="@+id/order_totle"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2"
+	            android:gravity="right"
+	            android:text="dddd"
+	            android:layout_marginTop="5dip"
+	            android:textColor="#2EFE2E"
+	            android:textSize="14dip"
+	            android:textStyle="bold" />
+        </LinearLayout>
+        
+        
+       <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical">
+           <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal">
+           		<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:text="@string/hotel_label_130"
+		            android:textColor="#000000"
+		            android:textSize="16dip"/>
+           		<TextView
+            	    android:id="@+id/order_username"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="3"
+		            android:layout_marginLeft="5dip"
+		            android:text=""
+		            android:textColor="#000000"
+		            android:textSize="16dip"/>
+           </LinearLayout>
+           
+           <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal">
+           		<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:text="@string/hotel_label_131"
+		            android:textColor="#000000"
+		            android:textSize="16dip"/>
+           		<TextView
+            	    android:id="@+id/order_weixin"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="3"
+		            android:layout_marginLeft="5dip"
+		            android:text=""
+		            android:textColor="#000000"
+		            android:textSize="16dip"/>
+           </LinearLayout>
+           
+           <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal">
+           		<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:text="@string/hotel_label_132"
+		            android:textColor="#000000"
+		            android:textSize="16dip"/>
+           		<TextView
+            	    android:id="@+id/order_phone"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="3"
+		            android:layout_marginLeft="5dip"
+		            android:text=""
+		            android:textColor="#000000"
+		            android:textSize="16dip"/>
+           </LinearLayout>
+           
+           <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal">
+           		<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:text="@string/hotel_label_133"
+		            android:textColor="#000000"
+		            android:textSize="16dip"/>
+           		<TextView
+            	    android:id="@+id/order_start"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="3"
+		            android:layout_marginLeft="5dip"
+		            android:text=""
+		            android:textColor="#000000"
+		            android:textSize="16dip"/>
+           </LinearLayout>
+       </LinearLayout>
+       
+       <!-- <ListView
+            android:id="@+id/store_item_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:visibility="gone"
+            android:dividerHeight="0px"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:scrollingCache="false" /> -->
+
+        <TextView
+            android:id="@+id/store_doc_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dip"
+            android:text="fffffff"
+            android:textColor="#000000"
+            android:textSize="14dip"
+            android:visibility="visible" />
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_weight="1">
+            	<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dip"
+		            android:text="@string/hotel_label_134"
+		            android:textColor="#000000"
+		            android:textSize="16dip"/>
+        	</LinearLayout>
+        	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical|right" android:layout_weight="4">
+            	<ImageView
+            	    android:src="@drawable/pointer"
+            	    android:layout_marginRight="5dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+        	</LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

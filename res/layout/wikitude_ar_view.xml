@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.wikitude.architect.ArchitectView
+        xmlns:wikitude="http://schemas.android.com/apk/res/com.YOURPROJECT"
+        android:id="@+id/architectView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:keepScreenOn="true" >
+    </com.wikitude.architect.ArchitectView>
+
+    <LinearLayout
+        android:id="@+id/d_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="@drawable/wikitude_click_bg"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.0" >
+
+            <ImageView
+                android:id="@+id/simg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:text="name"
+                android:textColor="#000000"
+                android:textSize="22dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descri"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="name"
+                android:textColor="#000000"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/juli"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:text="name"
+                android:textColor="#DF0101"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--
+     <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginLeft="5dip" android:layout_marginTop="5dip">
+        <ImageView android:id="@+id/img" android:layout_width="100dip" android:layout_height="100dip" android:src="@drawable/realview_position_bg" android:layout_alignParentTop="true"/>	
+    	<LinearLayout android:layout_width="100dip" android:layout_height="100dip" android:id="@+id/liner">"
+    	</LinearLayout>
+    </FrameLayout>
+    -->
+
+</RelativeLayout>

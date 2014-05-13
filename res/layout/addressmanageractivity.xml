@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_backgroud"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_gravity="top"
+        android:background="@drawable/logo_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="#75000000"
+                android:shadowDy="2.0"
+                android:shadowRadius="2.0"
+                android:text="@string/menu_lable_54"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/break_cart"
+            android:layout_width="40.0dip"
+            android:layout_height="30.0dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_back"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:paddingTop="2.0dip"
+            android:scaleType="fitXY"
+            android:text="@string/cancel_info"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_red_ico"
+            android:gravity="center"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:paddingTop="2.0dip"
+            android:scaleType="fitXY"
+            android:text="@string/save_info"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayout01"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10.0dip"
+        android:background="@anim/shape_rounded_rectangle"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip" >
+
+            <TextView
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/menu_lable_79" />
+
+            <TextView
+                android:id="@+id/textConsignee"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:maxWidth="200.0dip"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editConsignee"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:gravity="right"
+                android:singleLine="true" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip" >
+
+            <TextView
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/menu_lable_80" />
+
+            <TextView
+                android:id="@+id/textTel"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:maxLength="11"
+                android:maxWidth="200.0dip"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTel"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="right"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip" >
+
+            <TextView
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/menu_lable_81" />
+
+            <TextView
+                android:id="@+id/textPhone"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:maxWidth="200.0dip"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="区号+电话号码"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/area_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip" >
+
+            <TextView
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/menu_lable_82" />
+
+            <TextView
+                android:id="@+id/textArea"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:maxWidth="200.0dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/editArea"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:maxWidth="200.0dip"
+                android:text="上海市 上海 静安区" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip" >
+
+            <TextView
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/menu_lable_83" />
+
+            <TextView
+                android:id="@+id/textPostcode"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:maxWidth="200.0dip"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editPostcode"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="200431" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip" >
+
+            <TextView
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/menu_lable_84" />
+
+            <TextView
+                android:id="@+id/textAddr"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:maxWidth="200.0dip"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editAddr"
+                style="@style/style_16_4B4B4B"
+                android:layout_width="200.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:maxLength="100"
+                android:maxWidth="200.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textDelete"
+        style="@style/style_15_EBEBEB_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30.0dip"
+        android:background="@anim/head_button"
+        android:gravity="center"
+        android:text="@string/menu_lable_85" />
+
+    <LinearLayout
+        android:id="@+id/linPca_sellayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="5.0dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/mySpinner01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <Spinner
+                android:id="@+id/mySpinner02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/mySpinner03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

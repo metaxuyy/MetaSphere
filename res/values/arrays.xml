@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <array name="item_menu">
+        <item>@string/itemmenu_back</item>
+        <item>@string/itemmenu_forward</item>
+        <item>@string/itemmenu_comment</item>
+        <item>@string/itemmenu_delete</item>
+        <item>@string/itemmenu_bookmark</item>
+        <item>@string/itemmenu_reload_portrait</item>
+        <item>@string/itemmenu_userinfo</item>
+    </array>
+
+    <string-array name="values_picture_size">
+        <item>128</item>
+        <item>176</item>
+        <item>240</item>
+        <item>320</item>
+        <item>960</item>
+    </string-array>
+
+    <array name="entries_interval">
+        <item>@string/entries_interval_1</item>
+        <item>@string/entries_interval_3</item>
+        <item>@string/entries_interval_4</item>
+    </array>
+
+    <string-array name="values_interval">
+        <item>30000</item>
+        <item>120000</item>
+        <item>300000</item>
+    </string-array>
+
+    <array name="entries_image_size">
+        <item>@string/image_size_large</item>
+        <item>@string/image_size_middle</item>
+        <item>@string/image_size_low</item>
+    </array>
+    <array name="entries_language">
+        <item>@string/language_auto</item>
+        <item>@string/language_en</item>
+        <item>@string/language_zh</item>
+        <item>@string/language_zh_tw</item>
+    </array>
+    <array name="values_language">
+        <item>@string/language_value_auto</item>
+        <item>@string/language_value_en</item>
+        <item>@string/language_value_zh</item>
+        <item>@string/language_value_zh_tw</item>
+    </array>
+
+    <string-array name="values_upload_image_size">
+        <item>ThreeMP</item>
+        <item>TwoMP</item>
+        <item>OneMP</item>
+    </string-array>
+
+    <array name="entries_download_image_size">
+        <item>@string/entries_download_image_large</item>
+        <item>@string/entries_download_image_small</item>
+    </array>
+
+    <string-array name="values_download_image_size">
+        <item>woriginal</item>
+        <item>wap690</item>
+    </string-array>
+
+    <array name="user_menu">
+        <item>@string/itemmenu_back</item>
+        <item>@string/itemmenu_forward</item>
+        <item>@string/itemmenu_comment</item>
+        <item>@string/itemmenu_bookmark</item>
+    </array>
+    <array name="comment_menu">
+        <item>@string/itemmenu_userinfo</item>
+        <item>@string/itemmenu_reply_comment</item>
+    </array>
+
+    <string-array name="email_addrs_list">
+        <item>\@gmail.com</item>
+        <item>\@yahoo.com.cn</item>
+        <item>\@hotmail.com</item>
+        <item>\@163.com</item>
+        <item>\@126.com</item>
+        <item>\@139.com</item>
+        <item>\@sohu.com</item>
+        <item>\@qq.com</item>
+    </string-array>
+
+    <array name="values_ip_address">
+        <item>192.168.254.55</item>
+        <item>192.168.254.28</item>
+        <item>223.4.115.110</item>
+        <item>121.199.8.186</item>
+    </array>
+
+    <string-array name="entries_ip_address">
+        <item>@string/local_server</item>
+        <item>bijiben</item>
+        <item>@string/mill_server</item>
+        <item>@string/amazon_server</item>
+    </string-array>
+
+</resources>

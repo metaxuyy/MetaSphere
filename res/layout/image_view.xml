@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/btn_header"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:background="@drawable/logo_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="40.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_back"
+            android:gravity="center"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:paddingTop="2.0dip"
+            android:scaleType="fitXY"
+            android:text="@string/cancel_info"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="62.0dip"
+            android:layout_marginRight="62.0dip"
+            android:layout_weight="6.0"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/txtv1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:shadowColor="#75000000"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="2.0"
+                    android:text="@string/select_imgs"
+                    android:textColor="#ffffffff"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="40.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_button"
+            android:gravity="center"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:paddingTop="2.0dip"
+            android:scaleType="fitXY"
+            android:text="@string/save_info"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/progLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/dialog_style_xml_icon" />
+        <!-- mce_style="?android:attr/progressBarStyleLarge" -->
+
+        <TextView
+            android:id="@+id/progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/locations_data"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/btn_header"
+        android:orientation="vertical" >
+
+        <!--
+        <ms.globalclass.image.ImageZoomView
+	    android:id="@+id/pic"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"/>
+        -->
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="matrix" />
+
+        <ZoomControls
+            android:id="@+id/zoomCtrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" >
+        </ZoomControls>
+    </RelativeLayout>
+
+</RelativeLayout>

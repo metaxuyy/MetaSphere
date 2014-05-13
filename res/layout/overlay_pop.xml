@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingBottom="20px"
+    android:paddingLeft="5px"
+    android:paddingRight="5px"
+    android:paddingTop="5px" >
+ <!-- 注意加上padding,否则view里面的东西就画到边框上了 -->
+
+    <TextView
+        android:id="@+id/map_bubbleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="dddddddd"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+ <!-- style可以没有,我这里第一个TextView表示标题,用的是大字体 -->
+
+    <TextView
+        android:id="@+id/map_bubbleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false" />
+ <!-- style可以没有,我这里第二个TextView表示描述信息,用的是大字体 -->
+
+</LinearLayout>

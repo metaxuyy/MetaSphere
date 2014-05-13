@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	xmlns:staggered="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/hotel_label_191"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/manager_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dip"
+        android:cacheColorHint="#0000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:scrollingCache="false"
+        android:transcriptMode="normal" />
+    
+<!-- <GridView
+    android:id="@+id/manager_gridView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dip"
+    android:layout_marginTop="5dp"
+    android:numColumns="1" /> -->
+
+	<!-- <ms.globalclass.StaggeredGridView.StaggeredGridView
+        android:id="@+id/manager_gridView"
+        staggered:numColumns="1"
+        staggered:drawSelectorOnTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" /> -->
+      	
+
+</LinearLayout>

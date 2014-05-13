@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>我的首页</title>
+	<meta name="viewport"
+		content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+		body {
+			font-family:Microsoft YaHei,Helvitica,Verdana,Tohoma,Arial,san-serif;
+			margin:0;
+			padding: 0;
+			text-decoration: none;
+			text-align:center;
+		}
+		.lab{
+			font-size:18px;
+			font-weight:bold;
+			color:#000;
+			margin-top:10px;
+			background:#ffcc00;
+			width:100%;
+			text-align:left;
+			padding-left:20px;
+		}
+		.divitem{
+			float:left;
+			width:40px;
+			height:40px;
+			padding:10px;
+			margin:5px;
+			border-radius: 5px;
+			background-color:#be7cd9;
+			background:-webkit-gradient(linear, right top, left bottom, from(#aa73a1), to(#711663));
+		}
+		.divc {width:260px;height:250px;padding:10px;border:1px solid #aaaaaa;margin:10px auto;text-align:center}
+	</style>
+	<script type="text/javascript">
+		function allowDrop(ev)
+		{
+			ev.preventDefault();
+		}
+		
+		function drag(ev)
+		{
+			ev.dataTransfer.setData("Text",ev.target.id);
+		}
+		
+		function drop(ev)
+		{
+			ev.preventDefault();
+			var data=ev.dataTransfer.getData("Text");
+			ev.target.appendChild(document.getElementById(data));
+		}
+	</script>
+</head>
+<body onload="addData(str)">
+	<p class="lab">已添加快捷菜单</p>
+	<div id="divYes" class="divc" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<br />
+	<p class="lab">未添加快捷菜单</p>
+	<div id="divNo" class="divc" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<br />
+	<script>
+		var str = "{'menuPageStyleId':'Muad4e4e98e2hrkg93t8', 'menuBgImg':'http://192.168.254.55/upload/9k7a44afb709hrkhc5ru.jpg', 'pkid':'Meud4f9bb573hrkhbriu', 'menuContext':'', 'menuBtnArr':[{'menuBtnIcon':'', 'menuName':'记事', 'menuBtnSkipInfo':'', 'menuBtnSkipContent':'', 'menuBtnSkipType':'', 'childBtn':'', 'pkid':'1', 'menuBtnUrl':'',  'menuBtnSkipName':'', 'menuBtnSkipID':'', 'menuBtnType':'', 'menuBtnImg':'/js/hotel/menu/images/mymenu1.jpg', 'menuBtnKeyword':'Keyword'},{'menuBtnIcon':'/js/hotel/menu/images/mymenu6.png', 'menuName':'美食', 'menuBtnSkipInfo':'', 'menuBtnSkipContent':'', 'menuBtnSkipType':'', 'childBtn':'', 'pkid':'2', 'menuBtnUrl':'',  'menuBtnSkipName':'', 'menuBtnSkipID':'', 'menuBtnType':'', 'menuBtnImg':'', 'menuBtnKeyword':''},{'menuBtnIcon':'/js/hotel/menu/images/mymenu5.png', 'menuName':'音乐', 'menuBtnSkipInfo':'', 'menuBtnSkipContent':'', 'menuBtnSkipType':'', 'childBtn':'', 'pkid':'3', 'menuBtnUrl':'',  'menuBtnSkipName':'', 'menuBtnSkipID':'', 'menuBtnType':'', 'menuBtnImg':'', 'menuBtnKeyword':''},{'menuBtnIcon':'', 'menuName':'旅途', 'menuBtnSkipInfo':'', 'menuBtnSkipContent':'', 'menuBtnSkipType':'', 'childBtn':'', 'pkid':'4', 'menuBtnUrl':'',  'menuBtnSkipName':'', 'menuBtnSkipID':'', 'menuBtnType':'', 'menuBtnImg':'/js/hotel/menu/images/mymenu1.jpg', 'menuBtnKeyword':''},{'menuBtnIcon':'', 'menuName':'好友', 'menuBtnSkipInfo':'', 'menuBtnSkipContent':'', 'menuBtnSkipType':'', 'childBtn':'', 'pkid':'5', 'menuBtnUrl':'',  'menuBtnSkipName':'', 'menuBtnSkipID':'', 'menuBtnType':'', 'menuBtnImg':'/js/hotel/menu/images/mymenu5.jpg', 'menuBtnKeyword':''},{'menuBtnIcon':'', 'menuName':'我的生活', 'menuBtnSkipInfo':'', 'menuBtnSkipContent':'', 'menuBtnSkipType':'', 'childBtn':'', 'pkid':'6', 'menuBtnUrl':'',  'menuBtnSkipName':'', 'menuBtnSkipID':'', 'menuBtnType':'', 'menuBtnImg':'/js/hotel/menu/images/mymenu6.jpg', 'menuBtnKeyword':''},{'menuBtnIcon':'', 'menuName':'我的娱乐', 'menuBtnSkipInfo':'', 'menuBtnSkipContent':'', 'menuBtnSkipType':'', 'childBtn':'', 'pkid':'7', 'menuBtnUrl':'',  'menuBtnSkipName':'', 'menuBtnSkipID':'', 'menuBtnType':'', 'menuBtnImg':'/js/hotel/menu/images/mymenu6.jpg', 'menuBtnKeyword':''},{'menuBtnIcon':'', 'menuName':'我的信息', 'menuBtnSkipInfo':'', 'menuBtnSkipContent':'', 'menuBtnSkipType':'', 'childBtn':'', 'pkid':'8', 'menuBtnUrl':'',  'menuBtnSkipName':'', 'menuBtnSkipID':'', 'menuBtnType':'', 'menuBtnImg':'/js/hotel/menu/images/mymenu2.jpg', 'menuBtnKeyword':''},{'menuBtnIcon':'', 'menuName':'我的收藏', 'menuBtnSkipInfo':'', 'menuBtnSkipContent':'', 'menuBtnSkipType':'', 'childBtn':'', 'pkid':'9', 'menuBtnUrl':'',  'menuBtnSkipName':'', 'menuBtnSkipID':'', 'menuBtnType':'', 'menuBtnImg':'', 'menuBtnKeyword':''}]}";
+		
+		function addData(s){
+			var jsonobj=eval('('+s+')');
+			var arrStr = jsonobj.menuBtnArr;
+			var arr=eval(arrStr);
+			for(var i=0;i<arr.length;i++){
+			   	var btnImg = arr[i].menuBtnImg;
+				var btnType = arr[i].menuBtnType;
+				var btnUrl = arr[i].menuBtnUrl;
+				var btnSkipType = arr[i].menuBtnSkipType;
+				var btnSkipContent = arr[i].menuBtnSkipContent;
+				var btnIcon = arr[i].menuBtnIcon;
+				var btnKeyWord = arr[i].menuBtnKeyword;
+				var btnName = arr[i].menuName;
+				var btnId = arr[i].pkid;
+				
+				var div = document.getElementById("divNo");  
+		        var divitem = document.createElement("div");  
+		        divitem.id = btnId;  
+		        divitem.className = "divitem";  
+		        //divitem.setAttribute("draggable","true");
+		        //divitem.setAttribute("ondragstart", "javascript:drag(event);");
+		        divitem.setAttribute("onclick", "javascript:btnClick(event);");
+		        divitem.innerHTML += btnName;
+		        div.appendChild(divitem);
+			}
+		}
+		
+		function btnClick(evt){
+			var curDiv = evt.target;
+			var curParId = curDiv.parentNode.id;
+			if(curParId=="divNo"){
+				document.getElementById("divNo").removeChild(curDiv);
+				document.getElementById("divYes").appendChild(curDiv);
+			}else if(curParId=="divYes"){
+				document.getElementById("divNo").appendChild(curDiv);
+				document.getElementById("divYes").removeChild(curDiv);
+			}
+		}
+	</script>
+</body>
+</html>

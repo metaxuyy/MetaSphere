@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:id="@+id/left_message_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mysendtime"
+            style="@style/ChattingItemSourceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_msg_item_source_from"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_rlayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="5dp" >
+
+        <ms.globalclass.image.RoundAngleImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            app:roundHeight="10dp"
+            app:roundWidth="10dp"
+            android:src="@drawable/default_avatar_shadow" />
+        
+        <ms.globalclass.PowerImageView
+	        android:id="@+id/gif1"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:visibility="gone"  
+	        app:auto_play="true" />  
+        
+        <LinearLayout
+            android:id="@+id/layout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:background="@drawable/chatfrom_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical|left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/aim_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/mymessagecontent"
+                    style="@style/chat_content_date_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:lineSpacingExtra="2dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mymessagecontent2"
+                    style="@style/chat_content_date_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:autoLink="email|phone|web"
+                    android:lineSpacingExtra="2dp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/uploadFileImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0px" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="false"
+                    android:indeterminateDrawable="@drawable/umeng_xp_progressbar"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/upload_img_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/app_msg_item_source_from_pressed"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:indeterminate="false"
+                        android:indeterminateDrawable="@drawable/umeng_xp_progressbar"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/progress_tv"
+                        style="@style/TextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textColor="#ffffff"
+                        android:textSize="14dip"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/ChattingItemSourceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/layout_text"
+            android:background="@drawable/app_msg_item_source_from"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerVertical="true"
+            android:gravity="left|center"
+            android:lineSpacingExtra="2dp"
+            android:maxHeight="40dp"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/send_progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/layout_text"
+            android:indeterminate="false"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/start_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/layout_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/btn_msg_state_button"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            style="@style/ChattingItemSourceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/iv_userhead"
+            android:layout_toLeftOf="@id/layout_text"
+            android:background="@drawable/app_msg_item_source_from"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

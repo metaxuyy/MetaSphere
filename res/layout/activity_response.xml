@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <Button
+                android:id="@+id/response_cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/foot_btn_show"
+                android:text="  取消  "
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/response_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="意见反馈"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/response_saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/foot_btn_send"
+                android:text="  发送  "
+                android:textColor="#ffffff"
+                android:enabled="false" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/responseET"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/mm_edit"
+        android:gravity="left|top" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="5px"
+    android:paddingTop="5px" >
+
+    <LinearLayout
+        android:id="@+id/msg_mssage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="0.0dip"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="5.0dip" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/yiman"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:background="@drawable/user_icon_effect_selected"
+                android:padding="10.0dip"
+                android:src="@drawable/yi_man" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/msg_textcontainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:background="@drawable/itembackground"
+                android:focusableInTouchMode="true"
+                android:paddingBottom="6.0dip"
+                android:paddingTop="8.0dip" >
+
+                <LinearLayout
+                    android:id="@+id/layoutText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/layoutName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4.0dip"
+                        android:gravity="top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/mysendname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_weight="1.0"
+                            android:singleLine="true"
+                            android:text="TextView"
+                            android:textColor="#ff777777"
+                            android:textSize="14.0sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mysendtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_weight="0.0"
+                            android:singleLine="true"
+                            android:text="TextView"
+                            android:textColor="#ff97a3ae"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/mymessagecontent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:padding="2.0sp"
+                        android:singleLine="false"
+                        android:text="TextView"
+                        android:textColor="#ff5d5d5d"
+                        android:textSize="15.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/uploadFileImg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/mymessagecontent"
+                            android:layout_alignRight="@id/mymessagecontent"
+                            android:background="@drawable/chat_media_record_media_bg"
+                            android:src="@drawable/chat_media_record_pic_logo" />
+
+                        <ImageView
+                            android:id="@+id/luyinfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="10.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/mediaTool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/msg_textcontainer"
+                android:layout_marginLeft="23.0dip"
+                android:src="@drawable/chat_media_record_media_tool" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

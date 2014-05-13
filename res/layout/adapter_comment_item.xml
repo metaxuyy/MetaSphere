@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left|center_vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ff576b95"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/comment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000000"
+        android:paddingLeft="10dp" />
+    
+    <ImageView android:id="@+id/zhan_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tm_icon_like_on" android:visibility="gone" android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="lib" path="libs/android-support-v4.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/asmack.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/baidumapapi_v2_1_0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/bcprov-ext-jdk16-146.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/commons-codec.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/commons-httpclient-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/commons-io.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/commons-logging-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/httpmime-4.2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/locSDK_3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/netty-3.6.2.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/pinyin4j-2.5.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/sun.misc.BASE64Decoder.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridSmilesContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@+id/smilegrid"
+        android:layout_width="fill_parent"
+        android:layout_height="130.0dip" >
+
+        <ms.globalclass.scroll.ScrollViewGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="130.0dip"
+            android:layout_marginLeft="-5.0dip"
+            android:layout_marginRight="-5.0dip"
+            android:background="#ffecf2f7" />
+
+        <ViewFlipper
+            android:id="@+id/details"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:flipInterval="1000"
+            android:inAnimation="@anim/push_left_in"
+            android:outAnimation="@anim/push_left_out"
+            android:persistentDrawingCache="animation" >
+
+            <LinearLayout
+                android:id="@+id/layout_customize_view"
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:layout_marginLeft="-5.0dip"
+                android:layout_marginRight="-5.0dip"
+                android:background="#ffecf2f7"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_customize_view2"
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:layout_marginLeft="-5.0dip"
+                android:layout_marginRight="-5.0dip"
+                android:background="#ffecf2f7"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/layout_customize_view3"
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:layout_marginLeft="-5.0dip"
+                android:layout_marginRight="-5.0dip"
+                android:background="#ffecf2f7"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/layout_customize_view4"
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:layout_marginLeft="-5.0dip"
+                android:layout_marginRight="-5.0dip"
+                android:background="#ffecf2f7"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/layout_customize_view5"
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:layout_marginLeft="-5.0dip"
+                android:layout_marginRight="-5.0dip"
+                android:background="#ffecf2f7"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ViewFlipper>
+
+        <ms.globalclass.scroll.PageControlIconView
+            android:id="@+id/pageControl"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+<!-- @drawable/btncontentselector -->
+        <Button
+            android:id="@+id/btnPhoto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/send_bg_private"
+            android:drawableLeft="@drawable/biaoqing_icon"
+            android:drawablePadding="-20.0dip"
+            android:paddingLeft="20.0dip"
+            android:text="@string/hotel_label_195"
+            android:textColor="#FFFFFF"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/btnTape"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/send_bg_private"
+            android:drawableLeft="@drawable/donghuabiaoqin_icon"
+            android:drawablePadding="-20.0dip"
+            android:paddingLeft="20.0dip"
+            android:text="@string/hotel_label_196"
+            android:textColor="#FFFFFF"
+            android:textSize="18.0sp" />
+
+        <!-- <Button
+            android:id="@+id/btnAudio"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btncontentselector"
+            android:drawablePadding="-20.0dip"
+            android:paddingLeft="20.0dip"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="18.0sp" /> -->
+    </LinearLayout>
+
+</LinearLayout>

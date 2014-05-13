@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>我的首页</title>
+	<meta name="viewport"
+		content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta charset="utf-8"/>
+	<link href="mymenu.css" rel="stylesheet" type="text/css"/>
+	<script> 
+		function Map() {
+ 			var struct = function(key, value) {
+  				this.key = key;
+  				this.value = value;
+ 			}
+ 
+	 		var put = function(key, value){
+	  			for (var i = 0; i < this.arr.length; i++) {
+	   				if ( this.arr[i].key === key ) {
+	    				this.arr[i].value = value;
+	    				return;
+	  	 			}
+	  			}
+	   			this.arr[this.arr.length] = new struct(key, value);
+	 		}
+	 
+	 		var get = function(key) {
+	  			for (var i = 0; i < this.arr.length; i++) {
+	   				if ( this.arr[i].key === key ) {
+	     				return this.arr[i].value;
+	   				}
+	  			}
+	  			return null;
+	 		}
+	 
+	 		var remove = function(key) {
+	  			var v;
+	  			for (var i = 0; i < this.arr.length; i++) {
+	   				v = this.arr.pop();
+	   				if ( v.key === key ) {
+	    				continue;
+	   				}
+	   				this.arr.unshift(v);
+	  			}
+	 		}
+	 
+	 		var size = function() {
+	  			return this.arr.length;
+	 		}
+	 
+	 		var isEmpty = function() {
+	  			return this.arr.length <= 0;
+	 		}
+	
+	 		this.arr = new Array();
+	 		this.get = get;
+	 		this.put = put;
+	 		this.remove = remove;
+	 		this.size = size;
+	 		this.isEmpty = isEmpty;
+		}
+	</script>
+</head>
+
+<body id="cate8">
+		<ul class="mainmenu">
+			<li class="li40">
+				<div class="menubtn btn40blue" id="li1DivT">
+								<a id="li1A">
+							<div class="menuimg" id="li1DivC">
+						</div> 
+						<p class="contentp" id="li1P"></p>
+				</div>
+			</li>
+			<li class="li30">
+				<div class="menubtn btn30green" id="li2DivT">
+								<a id="li2A">
+							<div class="menuimg" id="li2DivC">
+						</div>
+							</a>
+						<p class="contentp" id="li2P"></p>
+				</div>
+			</li>
+		 	<li class="li30">
+		 		<div class="menubtn btn30purple" id="li3DivT">
+								<a id="li3A">
+							<div class="menuimg" id="li3DivC">
+						</div>
+							</a>
+						<p class="contentp" id="li3P"></p>
+				</div>
+		 	</li>
+	        <li class="li30">
+				<div class="menubtn btn30yellow" id="li4DivT">
+								<a id="li4A">
+							<div class="menuimg" style="line-height:80px" id="li4DivC">
+						</div>
+							</a>
+						<p class="contentp" id="li4P"></p>
+				</div>
+			</li>
+		 	<li class="li30">
+		 		<div class="menubtn btn30grey" id="li5DivT">
+							<a id="li5A">
+							<div class="menuimg" style="line-height:80px" id="li5DivC">
+						</div>
+							</a>
+						<p class="contentp" id="li5P"></p>
+				</div>
+		 	</li>
+		 	<li class="li100h50">
+		 		<div class="menubtn btn100h50red" id="li6DivT">
+								<a id="li6A">
+							<div class="menuimg" style="line-height:150px" id="li6DivC">
+							</div>
+							</a>
+							<p class="contentp" id="li6P"></p>
+				</div>
+		 	</li>
+		 	<li class="li50">
+		 		<div class="menubtn btn50green" id="li7DivT">
+								<a id="li7A">
+							<div style="line-height:120px" id="li7DivC">
+							</div>
+							</a>
+							<p class="contentp" id="li7P"></p>
+				</div>
+		 	</li>
+		 	<li class="li50">
+		 		<div class="menubtn btn50yellow" id="li8DivT">
+		 						<a id="li8A">
+							<div style="line-height:120px" id="li8DivC">
+							</div>
+							</a>
+					<p class="contentp" id="li8P"></p>
+				</div>
+		 	</li>
+		 	<li class="li100h40">
+		 		<div class="menubtn btn100h40blue" id="li9DivT">
+		 						<a id="li9A">
+							<div style="line-height:120px" id="li9DivC">
+							</div>
+							</a>
+					<p class="contentp" id="li9P"></p>
+				</div>
+		 	</li>
+		</ul>
+
+	<script>
+		window.onload=function(){
+			//alert("加载完毕");
+			window.mymenu1.loadData();
+			//var str = readFile("mydata.txt");
+			//alert("读到的数据："+str);
+		}
+		
+		var idToNameMap = new Map();
+
+		function addData(s){
+			var jsonobj=eval('('+s+')');
+			var arrStr = jsonobj.menuBtnArr;
+			var arr=eval(arrStr);
+			for(var i=0;i<arr.length;i++){
+			   	var btnImg = arr[i].menuBtnImg;
+				var btnType = arr[i].menuBtnType;
+				var btnUrl = arr[i].menuBtnUrl;
+				var btnSkipType = arr[i].menuBtnSkipType;
+				var btnSkipContent = arr[i].menuBtnSkipContent;
+				var btnIcon = arr[i].menuBtnIcon;
+				var btnKeyWord = arr[i].menuBtnKeyword;
+				var btnName = arr[i].menuName;
+				var btnId = arr[i].pkid;
+				alert(btnImg);
+				
+				var divTName = "li"+(i+1)+"DivT";
+				var aName = "li"+(i+1)+"A";
+				var divCName = "li"+(i+1)+"DivC";
+				var pName = "li"+(i+1)+"P";
+				
+				idToNameMap.put(btnId, i+1);
+				
+				if(btnImg){
+		   			document.getElementById(divTName).style.cssText = "background:url('"+btnImg+"'); background-size:100% 100%";
+				}
+				
+				if(btnType==1){
+					document.getElementById(aName).href = btnUrl;
+				}else if(btnType==2){
+					if(btnSkipType==1){
+						document.getElementById(aName).href = btnSkipContent;
+					}else if(btnSkipType==2){
+						document.getElementById(aName).onclick = "skipActivity("+btnSkipContent+")";
+					}
+				}
+				
+				if(btnIcon){
+					var imgClass = "img80";
+					if(i==0){
+						imgClass = "img40";
+					}
+					if(i==1 || i==2){
+						imgClass = "img60";
+					}
+					document.getElementById(divCName).innerHTML += "<img src='"+btnIcon+"' class='"+imgClass+"'>";
+				}
+				
+				if(btnKeyWord){
+					document.getElementById(divCName).innerHTML += "<p class='ptextB'>"+btnKeyWord+"</p>";
+				}
+				
+				document.getElementById(pName).innerHTML += btnName;
+			}
+		}
+		
+		//type:bgimg a icon keyword
+		//onclick="updateBtn('icon', '1', '/js/hotel/menu/images/mymenu4.jpg', '/js/hotel/menu/images/mymenu5.png', 'hahahahah')"
+		function updateBtn(type, btnId, btnImg, btnIcon, btnKeyWord){
+			var liId = idToNameMap.get(btnId);
+			
+			if(type=="bgimg"){
+				document.getElementById("li"+liId+"DivT").style.cssText = "background:url('"+btnImg+"'); background-size:100% 100%";
+			}
+			if(type=="a"){
+				
+			}
+			if(type=="icon"){
+				var div = document.getElementById("li"+liId+"DivC");
+				var img = div.getElementsByTagName("img")[0];
+				if(img){
+					var imgClass = img.className;
+					div.removeChild(img);
+				}
+			
+				div.innerHTML += "<img src='"+btnIcon+"' class='"+imgClass+"'>";
+			}
+			if(type=="keyword"){
+				var div = document.getElementById("li"+liId+"DivC");
+				var p = div.getElementsByTagName("p")[0];
+				div.removeChild(p);
+				
+				div.innerHTML += "<p class='ptextB'>"+btnKeyWord+"</p>";
+			}
+		}
+	</script>
+</body>
+</html>					

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="@drawable/mmfooter_bg_white" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_height="wrap_content" style="@style/MMButton">
+    	<ImageButton android:id="@+id/mymassagesMenuButton" android:background="@null" android:paddingTop="3.0dip" android:paddingBottom="4.0dip" android:visibility="visible" android:layout_width="41.0dip" android:layout_height="fill_parent" android:src="@drawable/chatting_footer_switcher_input_selector" android:minWidth="0.0dip" style="@style/MMButton"/>
+        <ImageButton android:id="@+id/chatting_mode_separator" android:background="@drawable/mmfooter_listtotext_line2" android:paddingTop="3.0dip" android:paddingBottom="4.0dip" android:visibility="visible" android:layout_width="8.0dip" android:layout_height="fill_parent" />
+        
+        <LinearLayout android:id="@+id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	        <ImageButton android:id="@+id/mymassagespackButton" android:background="@null" android:paddingTop="3.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/chatting_setmode_msg_btn" android:minWidth="0.0dip" style="@style/MMButton" />
+	        <ImageButton android:id="@+id/add_app_btn" android:background="@null" android:paddingTop="3.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/type_select_btn" android:minWidth="0.0dip" style="@style/MMButton" />
+	        
+	        <LinearLayout android:orientation="horizontal" android:id="@+id/text_panel_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+	            <EditText android:id="@+id/messagecontent" android:background="@drawable/chat_edit" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:maxHeight="80.0dip" android:minHeight="41.0dip" android:hint="@null" android:singleLine="false" android:layout_weight="1.0" android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage" style="@style/MMEditText" />
+	            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:paddingLeft="2.0dip" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+	                <TextView android:gravity="top" android:id="@+id/chatting_wordcount_tv" android:visibility="gone" style="@style/ChattingUIWordCount" />
+	                <Button android:textSize="16.0dip" android:textColor="#FFFFFF" android:id="@+id/mymassagesendButton" android:background="@drawable/btnsendselector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxHeight="80.0dip" android:minWidth="50.0dip" android:minHeight="41.0dip" android:text="@string/button_send" />
+	            </LinearLayout>
+	        </LinearLayout>
+	        <Button android:textSize="20.0dip" android:textColor="#ff000000" android:id="@+id/btn_rcd" android:background="@drawable/chat_send_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:maxHeight="80.0dip" android:minHeight="41.0dip" android:text="@string/hotel_label_41" android:shadowColor="#ffffffff" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_weight="1.0" android:soundEffectsEnabled="true" android:visibility="gone"/>
+    	</LinearLayout>
+    	
+    	<LinearLayout
+                android:id="@+id/menu_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/left_layout">
+                <TextView android:id="@+id/menu_btn1" android:text="介绍" android:textColor="#ffffff" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:textSize="18dip" android:textStyle="bold" android:gravity="center"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/mmfooter_listtotext_tabline"/>
+                <TextView android:id="@+id/menu_btn2" android:text="预定" android:textColor="#ffffff" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:textSize="18dip" android:textStyle="bold" android:gravity="center"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/mmfooter_listtotext_tabline"/>
+                <TextView android:id="@+id/menu_btn3" android:text="最新活动" android:textColor="#ffffff" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:textSize="18dip" android:textStyle="bold" android:gravity="center"/>
+       </LinearLayout>
+    </LinearLayout>
+   
+    <LinearLayout
+            android:id="@+id/app_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:background="@drawable/app_panel_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/add_img_btn"
+                        android:layout_width="66dip"
+                        android:layout_height="66dip"
+                        android:background="@drawable/app_panel_shade"
+                        android:src="@drawable/app_panel_pic_icon" />
+
+                    <TextView
+                        style="@style/TextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/button_takephoto"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/spack_btn"
+                        android:layout_width="66dip"
+                        android:layout_height="66dip"
+                        android:background="@drawable/app_panel_shade"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/app_panel_spack_icon" />
+
+                    <TextView
+                        style="@style/TextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/hotel_label_42"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/tibg_btn"
+                        android:layout_width="66dip"
+                        android:layout_height="66dip"
+                        android:background="@drawable/app_panel_shade"
+                        android:src="@drawable/app_panel_tibg_icon" />
+
+                    <TextView
+                        style="@style/TextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/hotel_label_43"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_catalog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!--
+    <RelativeLayout android:id="@+id/btn_header"
+		android:background="@drawable/shape3" android:layout_alignParentTop="true"
+		android:gravity="center_horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<ImageButton android:id="@+id/qiehuan_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerInParent="true"
+			android:background="#00000000"
+		/>
+		
+		<ImageButton android:id="@+id/add_vip_card"
+			android:src="@drawable/add_card_24"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			android:background="#00000000"
+		/>
+		
+	</RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/btn_header"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            android:gravity="center_vertical"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip" >
+
+            <ImageView
+                android:id="@+id/qiehuan_btn"
+                android:layout_width="40.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/title_button"
+                android:gravity="center"
+                android:paddingBottom="7.0dip"
+                android:paddingLeft="9.0dip"
+                android:paddingRight="9.0dip"
+                android:paddingTop="7.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_title_list" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="62.0dip"
+                android:layout_marginRight="62.0dip"
+                android:layout_weight="6.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!--
+                    <RelativeLayout 
+						android:id="@+id/layout1"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" 
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						>
+						<TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/txtv1" android:text="全部卡" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+					</RelativeLayout>
+					<RelativeLayout 
+						android:id="@+id/layout2"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" 
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						>
+						<TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/txtv2" android:text="关注卡" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+					</RelativeLayout>
+					<RelativeLayout 
+						android:id="@+id/layout3"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" 
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						>
+						<TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/txtv3" android:text="关注券" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+					</RelativeLayout>
+                -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingTop="5.0dip" >
+
+                    <Button
+                        android:id="@+id/bt_group_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/title_button_group_left"
+                        android:gravity="center"
+                        android:paddingBottom="5.0dip"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:paddingTop="5.0dip"
+                        android:text="@string/all_cards"
+                        android:textColor="#ffffffff"
+                        android:textSize="16.0dip"
+                        android:textStyle="bold" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bt_group_middle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/title_button_group_middle"
+                        android:gravity="center"
+                        android:paddingBottom="5.0dip"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:paddingTop="5.0dip"
+                        android:text="@string/focus_cards"
+                        android:textColor="#ffffffff"
+                        android:textSize="16.0dip"
+                        android:textStyle="bold" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bt_group_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/title_button_group_right"
+                        android:gravity="center"
+                        android:paddingBottom="5.0dip"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:paddingTop="5.0dip"
+                        android:text="@string/focus_coupons"
+                        android:textColor="#ffffffff"
+                        android:textSize="16.0dip"
+                        android:textStyle="bold" >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/add_vip_card"
+                android:layout_width="40.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/title_button"
+                android:gravity="center"
+                android:paddingBottom="7.0dip"
+                android:paddingLeft="9.0dip"
+                android:paddingRight="9.0dip"
+                android:paddingTop="7.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_title_add" />
+        </RelativeLayout>
+        <!--
+             <GridView android:id="@+id/GridView_toolbar"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:layout_alignParentBottom="true"></GridView>
+        -->
+
+        <LinearLayout
+            android:id="@+id/mycardsLayouts"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/btn_header"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/btn_header" >
+
+            <ProgressBar
+                android:id="@+id/probar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/my_progressbar_bg_color" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/help_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="130.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="35.0dip"
+            android:paddingRight="25.0dip"
+            android:src="@drawable/add_vip_img" />
+    </RelativeLayout>
+
+</FrameLayout>

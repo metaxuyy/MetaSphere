@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/details"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:flipInterval="1000"
+        android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out"
+        android:persistentDrawingCache="animation" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/logo_bg"
+                    android:gravity="center"
+                    android:shadowColor="#75000000"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="2.0"
+                    android:text="@string/order_mine_hotel"
+                    android:textColor="#ffffffff"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/room_price"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:background="@drawable/list_button_group_bg"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/start_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mybill_list_lable_9"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@+id/checkin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="checkin"
+                                android:textColor="#ffffffff" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/seperate_line" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mybill_list_lable_10"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@+id/checkout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="checkout"
+                                android:textColor="#ffffffff" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/change_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/change_date"
+                            android:gravity="center"
+                            android:padding="5.0dip"
+                            android:text="@string/update_date"
+                            android:textColor="#ffffffff" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5.0dip"
+                    android:background="@drawable/room_bg"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="@drawable/list_selector"
+                    android:padding="5.0dip"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ProgressBar
+                        android:id="@+id/probar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:indeterminateDrawable="@drawable/my_progressbar_bg_color" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/reservation_detailed_history" />
+        </LinearLayout>
+    </ViewFlipper>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/btn_header"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:background="@drawable/titlebar_lightgray_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <Button
+            android:id="@+id/brack_btn"
+            android:layout_width="40.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_back"
+            android:gravity="center"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:paddingTop="2.0dip"
+            android:scaleType="fitXY"
+            android:text="@string/cancel_info"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/comment_btn"
+            android:layout_width="40.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_button"
+            android:gravity="center"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:paddingTop="2.0dip"
+            android:scaleType="fitXY"
+            android:text="@string/postrecord_infos"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffe4e4e4"
+        android:paddingBottom="5.0dip" >
+
+        <!-- android:visibility="gone" -->
+
+        <RelativeLayout
+            android:id="@+id/relative_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/btGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.0dip"
+                android:background="@drawable/newblog_pic_bg" />
+
+            <TextView
+                android:id="@+id/tvCmtLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5.0dip"
+                android:layout_marginBottom="3.0dip"
+                android:layout_toRightOf="@id/btGallery"
+                android:text="ddddd"
+                android:textColor="#ff000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/relative_bottom"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/editbox_background_focus_yellow" >
+
+            <!-- 默认android:visibility="invisible" -->
+
+            <LinearLayout
+                android:id="@+id/linear_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <!-- 照相机后面的图片 默认android:visibility="invisible" -->
+
+                <ImageView
+                    android:id="@+id/ivCameraPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.0dip"
+                    android:scaleType="fitStart" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etBlog"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/linear_progress"
+                android:background="@android:color/transparent"
+                android:bufferType="spannable"
+                android:gravity="top" />
+        </RelativeLayout>
+        <!-- android:visibility="gone" -->
+        <!-- android:visibility="gone" -->
+    </RelativeLayout>
+
+</LinearLayout>

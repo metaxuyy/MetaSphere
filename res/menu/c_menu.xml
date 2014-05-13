@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/group_c" >
+
+        <item
+            android:id="@+id/item_c"
+            android:icon="@drawable/ziji"
+            android:title="Own"></item>
+    </group>
+
+</menu>

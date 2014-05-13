@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/exit_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/exit_dialog_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+            
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/sns_ui_setback"
+                android:textColor="#ffffff"
+                android:textSize="18dip" />
+
+            <Button
+                android:id="@+id/exitBtn0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_style_alert_dialog_button"
+                android:gravity="center"
+                android:onClick="exitbutton6"
+                android:text="@string/sns_choose_image_from_album"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/exitBtn2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_style_alert_dialog_button"
+                android:gravity="center"
+                android:onClick="exitbutton7"
+                android:text="@string/settings_chatting_bg_take_photo"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/exitBtn1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_style_alert_dialog_cancel"
+                android:gravity="center"
+                android:onClick="exitbutton1"
+                android:text="@string/coupon_lable_16"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

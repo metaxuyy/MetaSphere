@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical" >
+
+    <!--
+         <RelativeLayout android:gravity="center_vertical" android:layout_gravity="top" android:id="@+id/LinearLayout01" android:background="@drawable/top_bar_private" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip">
+              	<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/traffic_lable_25" android:shadowColor="#75000000" android:shadowDy="2.0" android:shadowRadius="2.0" />
+                </FrameLayout>
+                <ImageView android:id="@+id/sel_btn"
+				android:background="@drawable/title_button" android:paddingLeft="9.0dip"
+				android:paddingTop="7.0dip" android:paddingRight="9.0dip"
+				android:paddingBottom="7.0dip" 
+				android:layout_width="40.0dip" android:layout_height="30.0dip"
+				android:src="@drawable/search_btn" android:scaleType="fitXY"
+				android:layout_gravity="right|center"
+				android:layout_centerVertical="true" />
+                <Button android:gravity="center" android:id="@+id/type_btn"
+					android:background="@drawable/title_button" android:paddingLeft="3.0dip"
+					android:paddingTop="2.0dip" android:paddingRight="3.0dip"
+					android:paddingBottom="2.0dip"
+					android:textStyle="bold" android:textColor="#ffffffff"
+					android:layout_width="40.0dip" android:layout_height="30.0dip"
+					android:text="@string/traffic_lable_24" android:scaleType="fitXY"
+					android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/sel_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_right"
+                android:src="@drawable/search_icon"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="@string/traffic_lable_25"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/type_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_right"
+                android:src="@drawable/detail_more_selected"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sch_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/theme_title_green"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:paddingTop="5.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0"
+                android:text="出发地："
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/txtS1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#D8D8D8"
+                android:hint="上海"
+                android:paddingBottom="3dip"
+                android:textColorHint="#888888"
+                android:textSize="14dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0"
+                android:paddingLeft="7.0dip"
+                android:text="目的地："
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/txtS2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#D8D8D8"
+                android:hint="北京"
+                android:paddingBottom="3dip"
+                android:textColorHint="#888888"
+                android:textSize="14dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sch1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="35.0dip"
+            android:layout_marginRight="35.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/login_button"
+            android:text="搜索"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D8D8D8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/selimageHead"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/selImageBackBtn"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/selImageFolderName"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:ellipsize="middle"
+	            android:gravity="center"
+	            android:lines="1"
+	            android:text=""
+	            android:textColor="#ffffff"
+	            android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <!-- <Button
+                android:id="@+id/selImageCancleBtn"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/title_btn_right"
+                android:text="取消"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/image_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/selimageFoot"
+        android:layout_below="@+id/selimageHead"
+        android:layout_marginTop="5dp"
+        android:numColumns="3" />
+
+    <RelativeLayout
+        android:id="@+id/selimageFoot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/title_bar"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp" >
+
+        <Button
+            android:id="@+id/selImageShowBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/foot_btn_show"
+            android:enabled="false"
+            android:text="@string/hotel_label_194" />
+
+        <Button
+            android:id="@+id/selImageSaveBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/foot_btn_send"
+            android:enabled="false"
+            android:text="@string/button_send" />
+
+        <LinearLayout
+            android:id="@+id/selImageNumLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/selImageSaveBtn"
+            android:layout_alignTop="@+id/selImageSaveBtn"
+            android:background="@drawable/friends_sends_pictures_number_icon"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/selImageNumTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffff" />
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

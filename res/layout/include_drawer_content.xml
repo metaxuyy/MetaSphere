@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mobiata="http://schemas.android.com/apk/res/com.expedia.bookings"
+    android:id="@+id/drawer_content"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_results_drawer_content_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/one_pixel"
+        android:background="#ffb5b5b5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6.0dip" >
+
+        <EditText
+            android:id="@+id/filter_hotel_name_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:hint="请输入搜索内容"
+            android:singleLine="true"
+            android:textSize="16.0sp" />
+        <!--
+        <include android:id="@+id/radius_filter_button_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" layout="@layout/include_filter_radius" />
+        <include android:id="@+id/rating_filter_button_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" layout="@layout/include_filter_rating" />
+        <include android:id="@+id/price_filter_button_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" layout="@layout/include_filter_price" />
+        -->
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_actionbar_map_normal" />
+
+</LinearLayout>

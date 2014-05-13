@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="10.0dip"
+    android:orientation="vertical" >
+
+    <ms.globalclass.FriendlyScrollView
+        android:id="@+id/ScrollView08"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/travel_infors"
+                android:textColor="#0080FF"
+                android:textSize="24px"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/travel_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="0.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/selector_bg_linearlayout"
+                android:orientation="vertical"
+                android:padding="0.0dip" >
+
+                <!--
+                                    <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_bg_droplist" android:id="@+id/attractions" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:gravity="center_vertical">
+						                <ImageView android:src="@drawable/card_menu_jindian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0dip" />
+						               	<TextView android:text="该旅游景点介绍" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0dip" />
+						            </LinearLayout>
+						            <ImageView android:id="@+id/imageView5" android:background="#10000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+						            <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_bg_droplist" android:id="@+id/periphery_hottel" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:gravity="center_vertical">
+						                <ImageView android:src="@drawable/card_meun_hottel_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0dip" />
+						               	<TextView android:text="周边酒店搜索" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0dip" />
+						            </LinearLayout>
+						            <ImageView android:id="@+id/imageView5" android:background="#10000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+						            <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_bg_droplist" android:id="@+id/periphery_food" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:gravity="center_vertical">
+						                <ImageView android:src="@drawable/card_meun_chifan_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0dip" />
+						               	<TextView android:text="周边美食搜索" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0dip" />
+						            </LinearLayout>
+						            <ImageView android:id="@+id/imageView5" android:background="#10000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+						            <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_bg_droplist" android:id="@+id/periphery_shopping" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:gravity="center_vertical">
+						                <ImageView android:src="@drawable/card_meun_shoping_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0dip" />
+						               	<TextView android:text="周边购物搜索" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0dip" />
+						            </LinearLayout>
+						            <ImageView android:id="@+id/imageView5" android:background="#10000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+						            <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_bg_droplist" android:id="@+id/periphery_parking" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:gravity="center_vertical">
+						                <ImageView android:src="@drawable/card_menu_parking_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0dip" />
+						               	<TextView android:text="周边停车场搜索" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0dip" />
+						            </LinearLayout>
+                -->
+
+                <GridView
+                    android:id="@+id/gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="255dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dip"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ms.globalclass.FriendlyScrollView>
+
+</LinearLayout>

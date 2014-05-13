@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/message_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/break_btn"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_lable"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hotel_label_47"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/select_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1" >
+
+                <ms.globalclass.RoundAngleImageView
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    app:roundHeight="10dp"
+                    app:roundWidth="10dp"
+                    android:src="@drawable/chatting_bg_icon" />
+
+                <TextView
+                    android:id="@+id/bg_txt"
+                    style="@style/TextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/app_msg_item_source_from_pressed"
+                    android:gravity="center"
+                    android:text="@string/traffic_lable_24"
+                    android:textColor="#FFFFFF" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/select_bg2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ms.globalclass.RoundAngleImageView
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    app:roundHeight="10dp"
+                    app:roundWidth="10dp"
+                    android:src="@drawable/chatting_bg_icon2" />
+
+                <TextView
+                    android:id="@+id/bg_txt2"
+                    style="@style/TextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/app_msg_item_source_from_pressed"
+                    android:gravity="center"
+                    android:text="@string/traffic_lable_24"
+                    android:textColor="#FFFFFF" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/select_bg3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1" >
+
+                <ms.globalclass.RoundAngleImageView
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    app:roundHeight="10dp"
+                    app:roundWidth="10dp"
+                    android:src="@drawable/chatting_bg_icon3" />
+
+                <TextView
+                    android:id="@+id/bg_txt3"
+                    style="@style/TextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/app_msg_item_source_from_pressed"
+                    android:gravity="center"
+                    android:text="@string/traffic_lable_24"
+                    android:textColor="#FFFFFF" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/select_bg4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1" >
+
+                <ms.globalclass.RoundAngleImageView
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    app:roundHeight="10dp"
+                    app:roundWidth="10dp"
+                    android:src="@drawable/chatting_bg_icon4" />
+
+                <TextView
+                    android:id="@+id/bg_txt4"
+                    style="@style/TextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/app_msg_item_source_from_pressed"
+                    android:gravity="center"
+                    android:text="@string/traffic_lable_24"
+                    android:textColor="#FFFFFF" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/select_bg5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ms.globalclass.RoundAngleImageView
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    app:roundHeight="10dp"
+                    app:roundWidth="10dp"
+                    android:src="@drawable/chatting_bg_icon5" />
+
+                <TextView
+                    android:id="@+id/bg_txt5"
+                    style="@style/TextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/app_msg_item_source_from_pressed"
+                    android:gravity="center"
+                    android:text="@string/traffic_lable_24"
+                    android:textColor="#FFFFFF" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/select_bg6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1" >
+
+                <ms.globalclass.RoundAngleImageView
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    app:roundHeight="10dp"
+                    app:roundWidth="10dp"
+                    android:src="@drawable/chatting_bg_icon6" />
+
+                <TextView
+                    android:id="@+id/bg_txt6"
+                    style="@style/TextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/app_msg_item_source_from_pressed"
+                    android:gravity="center"
+                    android:text="@string/traffic_lable_24"
+                    android:textColor="#FFFFFF" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/select_bg7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1" >
+
+                <ms.globalclass.RoundAngleImageView
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    app:roundHeight="10dp"
+                    app:roundWidth="10dp"
+                    android:src="@drawable/chatting_bg_icon7" />
+
+                <TextView
+                    android:id="@+id/bg_txt7"
+                    style="@style/TextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/app_msg_item_source_from_pressed"
+                    android:gravity="center"
+                    android:text="@string/traffic_lable_24"
+                    android:textColor="#FFFFFF" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/select_bg8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ms.globalclass.RoundAngleImageView
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    app:roundHeight="10dp"
+                    app:roundWidth="10dp"
+                    android:src="@drawable/chatting_bg_icon8" />
+
+                <TextView
+                    android:id="@+id/bg_txt8"
+                    style="@style/TextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/app_msg_item_source_from_pressed"
+                    android:gravity="center"
+                    android:text="@string/traffic_lable_24"
+                    android:textColor="#FFFFFF" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/select_bg9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1" >
+
+                <ms.globalclass.RoundAngleImageView
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    app:roundHeight="10dp"
+                    app:roundWidth="10dp"
+                    android:src="@drawable/chatting_bg_icon9" />
+
+                <TextView
+                    android:id="@+id/bg_txt9"
+                    style="@style/TextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/app_msg_item_source_from_pressed"
+                    android:gravity="center"
+                    android:text="@string/traffic_lable_24"
+                    android:textColor="#FFFFFF" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

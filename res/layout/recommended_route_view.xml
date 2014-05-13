@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1.0"
+    android:background="#fff1f3f1"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@drawable/logo_bg"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:id="@+id/layoutImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="3.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="3.0dip" >
+
+            <ImageView
+                android:id="@+id/imgTitle"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/imgMask"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:src="@drawable/pic_mask_yellow"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10.0sp"
+            android:layout_marginTop="3.0dip"
+            android:layout_toRightOf="@id/layoutImg"
+            android:textColor="#FFFFFF"
+            android:textSize="12.0dip" />
+
+        <TextView
+            android:id="@+id/lblNote"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblTitle"
+            android:layout_marginLeft="10.0sp"
+            android:layout_toRightOf="@id/layoutImg"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textSize="11.0dip" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <com.google.android.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.0"
+            android:apiKey="0XYezhrIN6SbULCiJb-2RREh9RGbPdQb7-LBToA"
+            android:clickable="true" />
+
+        <RelativeLayout
+            android:id="@+id/map_step_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#00000000" >
+
+            <RelativeLayout
+                android:id="@+id/layoutStep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.0dip"
+                android:layout_marginTop="14.0dip"
+                android:background="@drawable/bg_step"
+                android:clickable="true"
+                android:gravity="left" >
+
+                <RelativeLayout
+                    android:id="@+id/layoutStepList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120.0dip"
+                    android:visibility="gone" >
+
+                    <ListView
+                        android:id="@+id/lstStep"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="1.0dip"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@drawable/main_line"
+                        android:fastScrollEnabled="true"
+                        android:scrollbars="vertical"
+                        android:scrollingCache="false" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_below="@id/lstStep"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:background="@drawable/horizontal_separation_line_repeat" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="56.0dip"
+                    android:layout_below="@id/layoutStepList" >
+
+                    <RelativeLayout
+                        android:id="@+id/layoutOverview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14.0dip"
+                        android:clickable="true" >
+
+                        <ImageButton
+                            android:id="@+id/btnShowAllStep"
+                            android:layout_width="24.0dip"
+                            android:layout_height="24.0dip"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/btn_showallsteps_selector"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/lblName"
+                            android:layout_width="32.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/btnShowAllStep"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ff7a7a7a"
+                            android:textSize="8.0dip" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="2.0px"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="3.0dip"
+                        android:layout_toRightOf="@id/layoutOverview"
+                        android:background="@drawable/vertical_separation_line" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutTips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left|center"
+                        android:layout_marginTop="3.0dip"
+                        android:layout_toRightOf="@id/divider"
+                        android:orientation="vertical" >
+
+                        <ViewFlipper
+                            android:id="@+id/switcher"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:flipInterval="1000"
+                            android:inAnimation="@anim/push_left_in"
+                            android:outAnimation="@anim/push_left_out"
+                            android:persistentDrawingCache="animation" />
+                        <!-- <ViewSwitcher android:layout_gravity="left|center" android:id="@+id/switcher" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" /> -->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutButtons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="3.0dip"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:id="@+id/btnPrev"
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:background="@drawable/btn_prev_selector"
+                            android:scaleType="fitXY" />
+
+                        <ImageButton
+                            android:id="@+id/btnNext"
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:layout_marginLeft="3.0dip"
+                            android:layout_marginRight="3.0dip"
+                            android:background="@drawable/btn_next_selector"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/btn_close_selector" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tool"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:background="@drawable/bg_toolbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="1.0dip"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/btn_spot_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_toolbar_selector"
+            android:drawableTop="@drawable/btn_toolbar_view_spot"
+            android:gravity="center_horizontal"
+            android:text="@string/landscape_looks"
+            android:textColor="#ff000000"
+            android:textSize="10.0dip" />
+
+        <Button
+            android:id="@+id/btn_select_route"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_toolbar_selector"
+            android:drawableTop="@drawable/btn_toolbar_route"
+            android:gravity="center_horizontal"
+            android:text="@string/landscape_ways"
+            android:textColor="#ff000000"
+            android:textSize="10.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_bg"
+            android:gravity="center"
+            android:shadowColor="#75000000"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:text="@string/order_has7"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/room_bg"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/rooms"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/reservation_item" />
+
+                <include
+                    android:id="@+id/times"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/reservation_item" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/room_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@android:style/TextAppearance.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/order_has2"
+                    android:textColor="#ff000000" />
+
+                <include
+                    android:id="@+id/hotel_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/reservation_item" />
+
+                <include
+                    android:id="@+id/checkinrl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/reservation_item" />
+
+                <include
+                    android:id="@+id/checkoutrl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/reservation_item" />
+
+                <include
+                    android:id="@+id/hotel_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/reservation_item" />
+
+                <include
+                    android:id="@+id/room_count"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/reservation_item" />
+
+                <include
+                    android:id="@+id/pay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/reservation_item" />
+
+                <include
+                    android:id="@+id/pay_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/reservation_item" />
+
+                <include
+                    android:id="@+id/back_now"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/reservation_item" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="@string/order_has8"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/guest_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/room_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/state"
+                    style="@android:style/TextAppearance.Large"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:gravity="center_horizontal"
+                    android:text="@string/order_has4"
+                    android:textColor="#ff000000" />
+
+                <include
+                    android:id="@+id/guest_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/guest_info" />
+
+                <include
+                    android:id="@+id/mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/guest_info" />
+
+                <include
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/guest_info" />
+
+                <include
+                    android:id="@+id/message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/guest_info" />
+
+                <LinearLayout
+                    android:id="@+id/other_guest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/state"
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:gravity="center_horizontal"
+                        android:text="@string/order_has5"
+                        android:textColor="#ff000000" />
+
+                    <LinearLayout
+                        android:id="@+id/other_guest_group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reservation_item_bg"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="@string/order_has6"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/guarantee"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/room_bg"
+                android:textColor="#ff000000"
+                android:textSize="18.0sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0" >
+
+                <include layout="@layout/selector_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

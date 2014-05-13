@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@anim/submit_item_selected" android:state_pressed="true"/>
+    <item android:drawable="@anim/shape_rounded_rectangle"/>
+    <item android:drawable="@anim/submit_item_selected" android:state_focused="true"/>
+
+</selector>

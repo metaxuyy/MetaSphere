@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hotel_label_7"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_bg_text_size" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="openMoments" >
+
+        <ImageView
+            android:id="@+id/add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/find_more_friend_photograph_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/add_friend"
+            android:padding="8dp"
+            android:text="@string/hotel_label_120"
+            android:textColor="#000"
+            android:textSize="17sp" />
+        
+        <FrameLayout android:id="@+id/new_moments" android:layout_width="40dip" android:layout_height="40dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="20dip" android:visibility="gone">
+        	<ms.globalclass.image.RoundAngleImageView
+	            android:id="@+id/user_img"
+	            android:layout_width="32dip"
+	            android:layout_height="32dip"
+	            android:layout_gravity="center"
+				android:layout_margin="5dip"
+	            app:roundHeight="5dp"
+	            app:roundWidth="5dp"
+	            android:src="@drawable/default_avatar_shadow" />
+        	<ImageView
+	            android:layout_width="14dip"
+	            android:layout_height="14dip"
+	            android:layout_gravity="top|right"
+	            android:visibility="visible"
+	            android:src="@drawable/navigation_ts" />
+        </FrameLayout>
+        
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:background="@drawable/preference_first_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="add_friends" >
+
+        <ImageView
+            android:id="@+id/add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/find_more_friend_addfriend_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/add_friend"
+            android:padding="8dp"
+            android:text="@string/hotel_label_66"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:background="@drawable/preference_last_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="add_store" >
+
+        <ImageView
+            android:id="@+id/add_sotore_shake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/find_more_friend_star_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/add_sotore_shake"
+            android:padding="8dp"
+            android:text="@string/hotel_label_67"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="btn_shake" >
+
+        <ImageView
+            android:id="@+id/add_friend_shake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/find_more_friend_shake" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/add_friend_shake"
+            android:padding="8dp"
+            android:text="@string/hotel_label_68"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+</LinearLayout>

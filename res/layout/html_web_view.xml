@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="@dimen/title_bg_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_back"
+                android:text="@string/cancel_info"
+                android:textColor="#FFFFFF"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="@string/order_hotel"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_bg_text_size"
+                android:textStyle="bold" />
+            <ProgressBar
+                    android:id="@+id/load_progressBar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:indeterminate="false"
+                    android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+			<Button
+			    android:id="@+id/call_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/title_btn_right"
+			    android:text="@string/hotel_label_9"
+			    android:textColor="#FFFFFF"
+			    android:textSize="12sp"
+			    android:visibility="gone"
+			    android:onClick="callService"
+			    android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+    
+   	<LinearLayout android:id="@+id/bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:background="@drawable/webviewtab_bg" android:visibility="gone">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="left|center_vertical" android:orientation="horizontal">
+            <ImageView android:id="@+id/retreat_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/webviewtab_back_disable" android:layout_marginLeft="5dip"/>
+            <ImageView android:id="@+id/advance_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/webviewtab_forward_disable" android:layout_marginLeft="10dip"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="right|center_vertical">
+            <ImageView android:id="@+id/refresh_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/webviewtab_refresh_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <WebView android:id="@+id/webview1" android:layout_width="fill_parent" android:layout_below="@id/top_layout" android:layout_above="@id/bottom_layout"
+    	android:layout_height="fill_parent" android:layout_weight="1" />
+
+</RelativeLayout>

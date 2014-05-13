@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/album_comment_container" android:background="@drawable/friendactivity_comment_frame_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:visibility="visible">
+	                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/album_like_img" android:background="@drawable/friendactivity_comment_frame" android:layout_width="88.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip">
+	                    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	                        <ImageView android:id="@+id/album_like_icon" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/friendactivity_comment_likeicon"/>
+	                        <TextView android:textColor="#fff" android:id="@+id/album_like_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/sns_like" />
+	                    </LinearLayout>
+	                </LinearLayout>
+	                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/album_comment_li" android:background="@drawable/friendactivity_comment_frame" android:layout_width="88.0dip" android:layout_height="wrap_content">
+	                    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	                        <ImageView android:id="@+id/album_comment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/friendactivity_comment_writeicon" />
+	                        <TextView android:textColor="#fff" android:id="@+id/album_comment_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/sns_comment" />
+	                    </LinearLayout>
+	                </LinearLayout>
+	 </LinearLayout>
+
+</LinearLayout>

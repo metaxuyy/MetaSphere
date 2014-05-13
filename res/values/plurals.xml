@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <plurals name="number_of_matching_hotels">
+        <item quantity="other">&amp;lt;b>%d&amp;lt;/b> matching hotels</item>
+        <item quantity="zero">&amp;lt;b>%d&amp;lt;/b> matching hotels</item>
+        <item quantity="one">&amp;lt;b>%d&amp;lt;/b> matching hotel</item>
+        <item quantity="two">&amp;lt;b>%d&amp;lt;/b> matching hotels</item>
+        <item quantity="many">&amp;lt;b>%d&amp;lt;/b> matching hotels</item>
+    </plurals>
+    <plurals name="number_of_results">
+        <item quantity="other">&amp;lt;b>%d&amp;lt;/b> Results</item>
+        <item quantity="zero">&amp;lt;b>%d&amp;lt;/b> Results</item>
+        <item quantity="one">&amp;lt;b>%d&amp;lt;/b> Result</item>
+        <item quantity="two">&amp;lt;b>%d&amp;lt;/b> Results</item>
+        <item quantity="many">&amp;lt;b>%d&amp;lt;/b> Results</item>
+    </plurals>
+    <plurals name="number_of_reviews">
+        <item quantity="other">%d Reviews</item>
+        <item quantity="zero">%d Reviews</item>
+        <item quantity="one">%d Review</item>
+        <item quantity="two">%d Reviews</item>
+        <item quantity="many">%d Reviews</item>
+    </plurals>
+    <plurals name="staying_nights">
+        <item quantity="other">Staying %d nights</item>
+        <item quantity="zero">Staying %d nights</item>
+        <item quantity="one">Staying %d night</item>
+        <item quantity="two">Staying %d nights</item>
+        <item quantity="many">Staying %d nights</item>
+    </plurals>
+    <plurals name="number_of_rooms_left">
+        <item quantity="other">Only %d rooms left!</item>
+        <item quantity="zero">No rooms left!</item>
+        <item quantity="one">Only 1 room left!</item>
+        <item quantity="two">Only %d rooms left!</item>
+        <item quantity="many">Only %d rooms left!</item>
+    </plurals>
+    <plurals name="length_of_stay">
+        <item quantity="other">%d nights</item>
+        <item quantity="one">1 night</item>
+    </plurals>
+    <plurals name="number_of_adults">
+        <item quantity="other">%d Adults</item>
+        <item quantity="zero">%d Adults</item>
+        <item quantity="one">%d Adult</item>
+        <item quantity="two">%d Adults</item>
+        <item quantity="many">%d Adults</item>
+    </plurals>
+    <plurals name="number_of_children">
+        <item quantity="other">%d Children</item>
+        <item quantity="zero">%d Children</item>
+        <item quantity="one">%d Child</item>
+        <item quantity="two">%d Children</item>
+        <item quantity="many">%d Children</item>
+    </plurals>
+    <plurals name="number_of_guests">
+        <item quantity="other">%d Guests</item>
+        <item quantity="zero">%d Guests</item>
+        <item quantity="one">%d Guest</item>
+        <item quantity="two">%d Guests</item>
+        <item quantity="many">%d Guests</item>
+    </plurals>
+    <plurals name="number_of_nights">
+        <item quantity="other">%d Nights</item>
+        <item quantity="zero">%d Nights</item>
+        <item quantity="one">%d Night</item>
+        <item quantity="two">%d Nights</item>
+        <item quantity="many">%d Nights</item>
+    </plurals>
+
+</resources>

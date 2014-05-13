@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6.0dip"
+    android:paddingLeft="6.0dip"
+    android:paddingRight="6.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_user_review" >
+
+        <RatingBar
+            android:id="@+id/user_review_rating_bar"
+            style="@style/RatingBarSmall.Shadowed.UserReview.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="3.0dip"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/user_review_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="3.0dip"
+            android:layout_toLeftOf="@id/user_review_rating_bar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="aaaa"
+            android:textColor="#ff333333"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/user_review_separator"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one_pixel"
+            android:layout_below="@id/user_review_title_text_view"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="1.0dip"
+            android:background="#ffcecfd3" />
+
+        <TextView
+            android:id="@+id/user_review_body_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_review_separator"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="3.0dip"
+            android:text="ddddddddddddddd"
+            android:textColor="#ff333333" />
+
+        <LinearLayout
+            android:id="@+id/read_more_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_review_body_text_view"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="3.0dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/user_review_read_more_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阅读更多内容"
+                android:textColor="#151515"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:src="@drawable/btn_user_review_read_more_triangle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_review_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/user_review_body_text_view"
+            android:layout_margin="3.0dip"
+            android:text="vvvvvvv"
+            android:textColor="#ff787878" />
+
+        <TextView
+            android:id="@+id/user_review_name_and_location_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/user_review_body_text_view"
+            android:layout_margin="3.0dip"
+            android:layout_toLeftOf="@id/user_review_date_text_view"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="nnnnnnn"
+            android:textColor="#ff787878" />
+    </RelativeLayout>
+
+</LinearLayout>

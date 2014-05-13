@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ms.activitys"
+    android:id="@+id/exit_layout"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/confirm_dialog_bg2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="5dp"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="@string/hotel_label_173"
+        android:textColor="#000000"
+        android:shadowColor="#ffffff"  
+	    android:shadowDx="2"  
+	    android:shadowDy="2"       
+	    android:shadowRadius="1"
+	    android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginLeft="10dip" android:layout_marginRight="10dip">
+        <ms.globalclass.image.RoundAngleImageView
+            android:id="@+id/user_img"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center"
+            android:layout_margin="8dip"
+            app:roundHeight="10dp"
+            app:roundWidth="10dp"
+            android:src="@drawable/default_avatar_shadow" />
+        
+        <TextView
+            android:id="@+id/user_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="ddddd"
+	        android:textColor="#000000"
+	        android:textSize="20sp" 
+	        android:shadowColor="#ffffff"  
+		    android:shadowDx="2"  
+		    android:shadowDy="2"       
+		    android:shadowRadius="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="23dp" >
+
+        <Button
+            android:id="@+id/exitBtn0"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_white"
+            android:gravity="center"
+            android:onClick="exitbutton0"
+            android:text="@string/sns_has_liked"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/exitBtn1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:onClick="exitbutton1"
+            android:text="@string/isture_info"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

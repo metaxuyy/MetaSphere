@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/map_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ViewFlipper
+            android:id="@+id/details"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:flipInterval="1000"
+            android:inAnimation="@anim/push_left_in"
+            android:outAnimation="@anim/push_left_out"
+            android:persistentDrawingCache="animation" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <RelativeLayout
+                    android:id="@+id/btn_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="top"
+                    android:background="@drawable/titlebar_lightgray_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip" >
+
+                    <ImageView
+                        android:id="@+id/refresh_btn"
+                        android:layout_width="40.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/title_button"
+                        android:gravity="center"
+                        android:paddingBottom="7.0dip"
+                        android:paddingLeft="9.0dip"
+                        android:paddingRight="9.0dip"
+                        android:paddingTop="7.0dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/detail_refresh_icon" />
+
+                    <ImageView
+                        android:id="@+id/comment_btn"
+                        android:layout_width="40.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/title_button"
+                        android:paddingBottom="7.0dip"
+                        android:paddingLeft="9.0dip"
+                        android:paddingRight="9.0dip"
+                        android:paddingTop="7.0dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/widget_edit_icon" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/progLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="false"
+                        android:indeterminateDrawable="@drawable/dialog_style_xml_icon" />
+                    <!-- mce_style="?android:attr/progressBarStyleLarge" -->
+
+                    <TextView
+                        android:id="@+id/progress_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/locations_data"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ListView
+                        android:id="@+id/freelook_listview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:divider="@drawable/divider_horizontal_timeline"
+                        android:dividerHeight="1.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/travel_detailed_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/travel_detailed_view"
+                    layout="@layout/lv_comment_detailed_view" />
+            </LinearLayout>
+        </ViewFlipper>
+    </LinearLayout>
+
+</LinearLayout>

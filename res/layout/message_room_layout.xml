@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/store_img"
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:background="@drawable/chatting_bg_icon3" >
+
+        <TextView
+            android:id="@+id/store_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#000000"
+            android:paddingLeft="5dip"
+            android:text="dddd"
+            android:textColor="#FFFFFF"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/room_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0px"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+</LinearLayout>

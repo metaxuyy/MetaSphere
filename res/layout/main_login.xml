@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.renren.mobile.android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/login_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:baselineAlignBottom="true" />
+
+        <RelativeLayout
+            android:id="@+id/login_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="10.0dip" >
+
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_earth" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+            <!-- <LinearLayout android:id="@+id/login_logo" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="15.0dip"> -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/login_logo" -->
+            <!-- android:layout_width="212dp" -->
+            <!-- android:layout_height="60dp" -->
+            <!-- android:src="@drawable/szjc_2011logo" /> -->
+
+
+            <!-- <TextView android:id="@+id/txt_f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NOVO" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="32dip"/> -->
+            <!-- <TextView android:id="@+id/txt_e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MANIA" android:textColor="#46A3FF" android:textStyle="bold" android:textSize="32dip" android:layout_marginLeft="5dip"/> -->
+            <!-- </LinearLayout> android:layout_below="@id/login_logo" -->
+
+            <LinearLayout
+                android:id="@+id/ll_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="165.0dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="20.0dip" >
+
+                    <EditText
+                        android:id="@+id/loginName"
+                        style="@style/login_input"
+                        android:paddingLeft="95dip"
+                        android:hint="@string/contact_way"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_account"
+                        style="@style/login_label"
+                        android:layout_alignBottom="@id/loginName"
+                        android:layout_alignTop="@id/loginName"
+                        android:text="@string/account_info" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="5.0dip" >
+
+                    <EditText
+                        android:id="@+id/password"
+                        style="@style/login_input"
+                        android:paddingLeft="95dip"
+                        android:inputType="textPassword"
+                        android:maxLength="50"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_psw"
+                        style="@style/login_label"
+                        android:layout_alignBottom="@id/password"
+                        android:layout_alignTop="@id/password"
+                        android:text="@string/account_password" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_input"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="11.0dip"
+                android:layout_marginRight="11.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/btn_style_green"
+                android:text="@string/login_info"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="11.0dip" android:orientation="horizontal" android:layout_alignParentBottom="true">
+                <Button
+	                android:id="@+id/visitor_user_btn"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:paddingLeft="10dip"
+	                android:paddingRight="10dip"
+	                android:layout_marginRight="10dip"
+	                android:background="@drawable/btn_style_alert_dialog_button"
+	                android:gravity="center"
+	                android:text="@string/hotel_label_126"
+	                android:textSize="22dip"
+	                android:onClick="onVisitorlogin"
+	                android:textColor="#000000"
+	                android:textStyle="bold" />
+                
+                <Button
+	                android:id="@+id/regedit_button"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:paddingLeft="10dip"
+	                android:paddingRight="10dip"
+	                android:layout_marginLeft="10dip"
+	                android:background="@drawable/btn_style_red"
+	                android:gravity="center"
+	                android:text="@string/vip_creates6"
+	                android:textSize="22dip"
+	                android:onClick="onVisitorlogin"
+	                android:textColor="#FFFFFFFF"
+	                android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

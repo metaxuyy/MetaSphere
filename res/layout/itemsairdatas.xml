@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="10.0dip" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="75.0dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/theme_title_dark_blue"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="5.0dip"
+        android:paddingTop="5.0dip" >
+
+        <TextView
+            android:id="@+id/station_airtypeName_TextView"
+            style="@style/text_big_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="FM6023" />
+
+        <TextView
+            android:id="@+id/station_ariName"
+            style="@style/text_mid_Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国国际航空" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/station_startName_TextView"
+            style="@style/text_mid_grey"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:text="出发站 ：呼和浩特" />
+
+        <TextView
+            android:id="@+id/station_endName_TextView"
+            style="@style/text_mid_grey"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:text="到达站 ：西安" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/airprices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:text="票价 ：1045"
+                android:textColor="@color/traincode_textcolor" />
+
+            <TextView
+                android:id="@+id/kilometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:paddingLeft="5.0dip"
+                android:text=""
+                android:textColor="@color/traincode_textcolor" />
+
+            <TextView
+                android:id="@+id/kilometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:paddingLeft="5.0dip"
+                android:text=""
+                android:textColor="@color/traincode_textcolor" />
+
+            <TextView
+                android:id="@+id/arikilometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:paddingLeft="5.0dip"
+                android:text="折扣 ：2.4折"
+                android:textColor="@color/traincode_textcolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/airstrtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:text="出发日期 ：11月11日"
+                android:textColor="@color/traincode_textcolor" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/airother"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:text="更新时间 ：2011-9-8"
+            android:textColor="@color/traincode_textcolor" />
+    </LinearLayout>
+
+</LinearLayout>

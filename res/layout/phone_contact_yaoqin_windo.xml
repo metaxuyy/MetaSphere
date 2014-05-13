@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exit_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tilte_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="5dp"
+        android:text="@string/hotel_label_186"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="@string/hotel_label_187"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        
+        <EditText 
+		    android:id="@+id/message_edit"
+		    android:layout_width="fill_parent"
+		    android:layout_height="80dip"
+		    android:textColor="#000"
+		    android:textSize="15sp"
+		    android:layout_marginTop="10dp"
+		    android:gravity="top|left"
+		    android:imeOptions="flagNoExtractUi"
+		    android:singleLine="true"
+		    android:background="@drawable/mm_edit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="33dp" >
+
+        <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style_white"
+            android:gravity="center"
+            android:text="@string/coupon_lable_16"
+            android:textColor="#333"
+            android:textSize="16sp" 
+            android:onClick="cleraWindo"/>
+        
+        <Button
+            android:id="@+id/add_vip_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:text="@string/hotel_label_190"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:onClick="sendFriendMessage" />
+        
+        <Button
+            android:id="@+id/add_vip_email_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:text="@string/hotel_label_189"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:onClick="sendFriendEmail" />
+
+    </LinearLayout>
+
+</LinearLayout>

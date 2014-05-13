@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="sort_filter_animation_duration">250</integer>
+    <integer name="booking_info_dialog_width_weight_sum">100</integer>
+    <integer name="booking_info_content_width_weight">95</integer>
+    <integer name="booking_info_columns_width_weight_sum">10</integer>
+    <integer name="booking_info_receipt_width_weight">5</integer>
+    <integer name="booking_info_form_width_weight">5</integer>
+    <integer name="country_and_postal_code_content_width_weight_sum">10</integer>
+    <integer name="country_width_weight">5</integer>
+    <integer name="postal_code_weight">5</integer>
+    <integer name="animation_duration">300</integer>
+    <integer name="left_list_pane_weight">3</integer>
+    <integer name="right_content_pane_weight">7</integer>
+    <integer name="num_review_rows">2</integer>
+    <integer name="num_review_columns">2</integer>
+    <integer name="num_hotel_description_sections_per_row">2</integer>
+    <integer name="num_hotel_description_columns">2</integer>
+    <integer name="search_params_input_weight">1</integer>
+    <integer name="search_params_image_weight">1</integer>
+
+</resources>

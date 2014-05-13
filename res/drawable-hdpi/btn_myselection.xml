@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_shape" android:state_pressed="false"/>
+    <item android:drawable="@drawable/btn_shape_selected" android:state_pressed="true"/>
+    <!-- 这里还可以加N多效果和动作 只要你用的到 -->
+    <item android:drawable="@drawable/btn_shape"/>
+
+</selector>

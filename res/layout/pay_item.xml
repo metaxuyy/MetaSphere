@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10.0dip"
+    android:paddingTop="10.0dip" >
+
+    <TextView
+        android:id="@+id/textCash"
+        style="@style/style_16_4B4B4B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10.0dip"
+        android:text="@string/menu_lable_87" />
+
+    <ImageView
+        android:id="@+id/imgMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="10.0dip"
+        android:src="@drawable/ok"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textValueHidde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</RelativeLayout>
